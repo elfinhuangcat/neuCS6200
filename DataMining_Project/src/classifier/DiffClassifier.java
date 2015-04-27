@@ -97,7 +97,7 @@ public class DiffClassifier {
 	}
 
 	/**
-	 * 
+	 * balancedTrainDa
 	 * @param trainData the training instances. It should be without missing value and balanced.
 	 * @param args[0] choice of classifier: ["-c45", "-knn", "-logr", "-nb", "-nbt", "-smo"]
 	 * @param args[after 0] options passed to the classifier.
