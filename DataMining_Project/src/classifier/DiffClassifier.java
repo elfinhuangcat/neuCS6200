@@ -1,7 +1,11 @@
 package classifier;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Random;
+
+import myutil.Log;
 
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
@@ -13,6 +17,7 @@ import weka.classifiers.trees.J48;
 import weka.classifiers.trees.NBTree;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
+import data_preprocess.FillMissingValue;
 import data_preprocess.MyResampler;
 /**
  * This class provides the method to run different classifiers 
@@ -22,6 +27,7 @@ import data_preprocess.MyResampler;
  *
  */
 public class DiffClassifier {
+	private String logFilePath;
 	private int fold; // Cross validation fold num
 	private int seed; // Random seed for reordering the training data
 	private Classifier model;
@@ -30,16 +36,30 @@ public class DiffClassifier {
 		this.fold = 10;
 		this.seed = (int) System.currentTimeMillis();
 		this.model = null;
+		this.logFilePath = null;
 	}
-	public DiffClassifier(int fold, int seed) {
+	public DiffClassifier(String logFilePath) {
+		this.fold = 10;
+		this.seed = (int) System.currentTimeMillis();
+		this.model = null;
+		this.logFilePath = logFilePath;
+	}
+	public DiffClassifier(int fold, int seed, String logFilePath) {
 		this.fold = fold;
 		this.seed = seed;
 		this.model = null;
+		this.logFilePath = logFilePath;
 	}
 
-	public static void main(String[] args) {
-		String[] arguments = {"/home/yaxin/workspace/DataMining_Project/data/train.arff",
-		"-knn", "-K", "3"};
+	public static void main(String[] args) throws IOException {
+		String trainArffPath = "/home/elfin/workspace/OngoingProjects/DataMining_Project/data/train.arff";
+		String logFilePath = "/home/elfin/workspace/OngoingProjects/DataMining_Project/data/log";
+		File logFile = new File(logFilePath);
+		if (logFile.exists()) {
+			logFile.delete();
+		}
+		logFile.createNewFile();
+		String[] arguments = {logFilePath, trainArffPath, "-knn", "-K", "3"};
 		try {
 			DiffClassifier.run(arguments);
 		} catch (Exception e) {
@@ -49,37 +69,43 @@ public class DiffClassifier {
 	}
 
 	/***************************************************
-	 * @param args[0] train arff path
-	 * @param args[1] choice of classifier: ["-c45", "-knn", "-logr", "-nb", "-nbt", "-smo"]
-	 * @param args[after 1] options passed to the classifier.
+	 * This method first preprocess the data and then evaluate the 
+	 * model by using 10-fold cross validation
+	 * @param args[0] log file path
+	 * @param args[1] train arff path
+	 * @param args[2] choice of classifier: ["-c45", "-knn", "-logr", "-nb", "-nbt", "-smo"]
+	 * @param args[after 2] options passed to the classifier.
 	 * @see For available options please check the correspongding weka doc.
 	 */
-	public static void run(String[] args) throws Exception {
+	public static double run(String[] args) throws Exception {
+		DiffClassifier classifyTask = new DiffClassifier(args[0]);
 		// Read training data
-		DataSource trainSource = new DataSource(args[0]);
+		DataSource trainSource = new DataSource(args[1]);
 		Instances trainData = trainSource.getDataSet();
 		trainData.setClassIndex(trainData.numAttributes() - 1);
+		
+		// Replace missing values:
+		Instances missingReplacedData = FillMissingValue.fillMissingValues(trainData);
 
 		// Resample:
-		Instances balancedTrainData = MyResampler.resampleToBalance(trainData);
+		Instances balancedTrainData = MyResampler.resampleToBalance(missingReplacedData);
 
 		// Build and evaluate the classifier using cross validation:
-		// TODO right now we use the default folds and seed
-		DiffClassifier classifyTask = new DiffClassifier();
-		classifyTask.buildAndEvaluate(balancedTrainData, 
-				Arrays.copyOfRange(args, 1, args.length));
+		return classifyTask.buildAndEvaluate(balancedTrainData, 
+				Arrays.copyOfRange(args, 2, args.length));
 
 	}
 
 	/**
 	 * 
-	 * @param trainData the training instances
+	 * @param trainData the training instances. It should be without missing value and balanced.
 	 * @param args[0] choice of classifier: ["-c45", "-knn", "-logr", "-nb", "-nbt", "-smo"]
 	 * @param args[after 0] options passed to the classifier.
 	 */
-	public void buildAndEvaluate(Instances trainData, String[] args) {
+	public double buildAndEvaluate(Instances trainData, String[] args) {
 		this.setModel(args[0], Arrays.copyOfRange(args, 1, args.length));
-		System.out.println("Options: " + Arrays.toString(this.model.getOptions()));
+		Log.addLogToThisPath("Options: " + Arrays.toString(this.model.getOptions()) + 
+				"\n", this.logFilePath);
 
 		// Randomize data
 		Random rand = new Random(this.seed);
@@ -99,22 +125,24 @@ public class DiffClassifier {
 				// Evaluate:
 				Evaluation eval = new Evaluation(trainFold);
 				eval.evaluateModel(this.model, testFold);
-				System.out.println("INFO - Statistics for " + (n+1) + "th fold: \n"
-						+ "Error rate: " + eval.errorRate() + "\nConfusion Matrix: ");
+				Log.addLogToThisPath("INFO - Statistics for " + (n+1) + "th fold: \n"
+						+ "Error rate: " + eval.errorRate() + "\nConfusion Matrix:\n", 
+						this.logFilePath);
 				for (int i = 0; i < eval.confusionMatrix().length; ++i) {
 					for (int j = 0; j < eval.confusionMatrix()[i].length; ++j) {
-						System.out.print(eval.confusionMatrix()[i][j] + "\t");
+						Log.addLogToThisPath(eval.confusionMatrix()[i][j] + "\t", this.logFilePath);
 					}
-					System.out.println();
+					Log.addLogToThisPath("\n", this.logFilePath);
 				}
 				sumErrorRate += eval.errorRate();
 			} catch (Exception e) {
-				System.out.println("ERROR - cannot load the train/test fold.");
+				Log.addLogToThisPath("ERROR - cannot load the train/test fold.\n", this.logFilePath);
 				e.printStackTrace();
 			}
 		}
-		System.out.println("************* Average Error Rate: " + 
-				sumErrorRate / this.fold + " *************");
+		Log.addLogToThisPath("************* Average Error Rate: " + 
+				sumErrorRate / this.fold + " *************\n", this.logFilePath);
+		return (sumErrorRate / this.fold);
 	}
 
 
@@ -141,36 +169,42 @@ public class DiffClassifier {
 	public void setModel(String modelChoice, String[] options) {
 		if (modelChoice.equals("-c45")) {
 			this.model = new J48();
-			System.out.println("====================\nClassifier Name: C45 Decision Tree");		
+			Log.addLogToThisPath("====================\nClassifier Name: " +
+					"C45 Decision Tree\n", this.logFilePath);
 		}
 		else if (modelChoice.equals("-knn")) {
 			this.model = new IBk();
-			System.out.println("====================\nClassifier Name: KNN");
+			Log.addLogToThisPath("====================\nClassifier Name: " +
+					"KNN\n", this.logFilePath);
 		}
 		else if (modelChoice.equals("-logr")) {
 			this.model = new Logistic();
-			System.out.println("====================\nClassifier Name: Logistic Regression");
+			Log.addLogToThisPath("====================\nClassifier Name: " +
+					"Logistic Regression\n", this.logFilePath);
 		}
 		else if (modelChoice.equals("-nb")) {
 			this.model = new NaiveBayes();
-			System.out.println("====================\nClassifier Name: Naive Bayes");
+			Log.addLogToThisPath("====================\nClassifier Name: " +
+					"Naive Bayes\n", this.logFilePath);
 		}
 		else if (modelChoice.equals("-nbt")) {
 			this.model = new NBTree();
-			System.out.println("====================\nClassifier Name: Naive Bayes Decision Tree");
+			Log.addLogToThisPath("====================\nClassifier Name: " +
+					"Naive Bayes Decision Tree\n", this.logFilePath);
 		}
 		else if (modelChoice.equals("-smo")) {
 			this.model = new SMO();
-			System.out.println("====================\nClassifier Name: SMO");
+			Log.addLogToThisPath("====================\nClassifier Name: " +
+					"SMO\n", this.logFilePath);
 		}
 		else {
-			System.out.println("ERROR - wrong choice of classifier.");
+			Log.addLogToThisPath("ERROR - wrong choice of classifier.\n", this.logFilePath);
 			System.exit(1);
 		}
 		try {
 			this.model.setOptions(options);
 		} catch (Exception e) {
-			System.out.println("ERROR - model options failed to be set.");
+			Log.addLogToThisPath("ERROR - model options failed to be set.\n", this.logFilePath);
 			e.printStackTrace();
 			System.exit(1);
 		}
