@@ -1,0 +1,200 @@
+=====================================
+Options set: [-C, 0.25, -M, 2, , , , , , , , , , ]
+Confusion Matrix:
+    2421.0     1425.0 
+     879.0    11556.0 
+
+Error rate of -c45: 0.14151464897733554
+=====================================
+=====================================
+Options set: [-K, 1, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2153.0     1693.0 
+    1693.0    10742.0 
+
+Error rate of -knn: 0.20797248326269885
+=====================================
+=====================================
+Options set: [-K, 2, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2839.0     1007.0 
+    2727.0     9708.0 
+
+Error rate of -knn: 0.22934709170198392
+=====================================
+=====================================
+Options set: [-K, 3, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2171.0     1675.0 
+    1305.0    11130.0 
+
+Error rate of -knn: 0.18303544008353295
+=====================================
+=====================================
+Options set: [-K, 4, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2594.0     1252.0 
+    1895.0    10540.0 
+
+Error rate of -knn: 0.19329279528284504
+=====================================
+=====================================
+Options set: [-K, 5, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2213.0     1633.0 
+    1217.0    11218.0 
+
+Error rate of -knn: 0.17505067256311038
+=====================================
+=====================================
+Options set: [-K, 6, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2478.0     1368.0 
+    1580.0    10855.0 
+
+Error rate of -knn: 0.18106995884773663
+=====================================
+=====================================
+Options set: [-K, 7, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2233.0     1613.0 
+    1175.0    11260.0 
+
+Error rate of -knn: 0.171242552668755
+=====================================
+=====================================
+Options set: [-K, 8, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2458.0     1388.0 
+    1444.0    10991.0 
+
+Error rate of -knn: 0.17394508936797495
+=====================================
+=====================================
+Options set: [-K, 9, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2229.0     1617.0 
+    1147.0    11288.0 
+
+Error rate of -knn: 0.16976844174190775
+=====================================
+=====================================
+Options set: [-K, 10, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2427.0     1419.0 
+    1391.0    11044.0 
+
+Error rate of -knn: 0.17259382101836496
+=====================================
+=====================================
+Options set: [-K, 11, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2252.0     1594.0 
+    1128.0    11307.0 
+
+Error rate of -knn: 0.16718874761992505
+=====================================
+=====================================
+Options set: [-K, 12, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2408.0     1438.0 
+    1326.0    11109.0 
+
+Error rate of -knn: 0.16976844174190775
+=====================================
+=====================================
+Options set: [-K, 13, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2258.0     1588.0 
+    1114.0    11321.0 
+
+Error rate of -knn: 0.16596032184755236
+=====================================
+=====================================
+Options set: [-K, 14, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2399.0     1447.0 
+    1278.0    11157.0 
+
+Error rate of -knn: 0.16737301148578096
+=====================================
+=====================================
+Options set: [-K, 15, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2257.0     1589.0 
+    1103.0    11332.0 
+
+Error rate of -knn: 0.165346108961366
+=====================================
+=====================================
+Options set: [-K, 16, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2394.0     1452.0 
+    1252.0    11183.0 
+
+Error rate of -knn: 0.16608316442478963
+=====================================
+=====================================
+Options set: [-K, 17, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2269.0     1577.0 
+    1083.0    11352.0 
+
+Error rate of -knn: 0.1633806277255697
+=====================================
+=====================================
+Options set: [-K, 18, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2359.0     1487.0 
+    1235.0    11200.0 
+
+Error rate of -knn: 0.16718874761992505
+=====================================
+=====================================
+Options set: [-K, 19, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2276.0     1570.0 
+    1092.0    11343.0 
+
+Error rate of -knn: 0.16350347030280696
+=====================================
+=====================================
+Options set: [-K, 20, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+Confusion Matrix:
+    2359.0     1487.0 
+    1208.0    11227.0 
+
+Error rate of -knn: 0.1655303728272219
+=====================================
+=====================================
+Options set: [-R, 1.0E-8, -M, -1, ]
+Confusion Matrix:
+    2104.0     1742.0 
+     735.0    11700.0 
+
+Error rate of -logr: 0.15214053190835944
+=====================================
+=====================================
+Options set: [, , ]
+Confusion Matrix:
+    1959.0     1887.0 
+     860.0    11575.0 
+
+Error rate of -nb: 0.16872427983539096
+=====================================
+=====================================
+Options set: [-D, , ]
+Confusion Matrix:
+    3052.0      794.0 
+    1766.0    10669.0 
+
+Error rate of -nb: 0.15723849886370617
+=====================================
+=====================================
+Options set: []
+Confusion Matrix:
+    2462.0     1384.0 
+     869.0    11566.0 
+
+Error rate of -nbt: 0.13838216325778516
+=====================================
