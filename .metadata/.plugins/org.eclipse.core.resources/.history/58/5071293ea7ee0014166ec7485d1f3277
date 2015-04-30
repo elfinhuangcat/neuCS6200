@@ -1,0 +1,151 @@
+package classifier;
+import java.util.Arrays;
+import java.util.Random;
+
+import myutil.Log;
+
+import data_preprocess.FillMissingValue;
+import data_preprocess.MyResampler;
+
+import weka.classifiers.Classifier;
+import weka.classifiers.Evaluation;
+import weka.classifiers.bayes.NaiveBayes;
+import weka.classifiers.functions.Logistic;
+import weka.classifiers.functions.SMO;
+import weka.classifiers.lazy.IBk;
+import weka.classifiers.meta.AdaBoostM1;
+import weka.classifiers.trees.J48;
+import weka.classifiers.trees.NBTree;
+import weka.core.Instances;
+import weka.core.converters.ConverterUtils.DataSource;
+public class DiffCls_Ada {	
+
+	private int fold;
+	private double seed;
+	private String logFilePath;
+	private Instances balancedData;
+
+	public DiffCls_Ada(String logFilePath) {
+		this.fold = 10;
+		this.seed = System.currentTimeMillis();
+		this.logFilePath = logFilePath;
+	}
+
+	public static void run(String logFilePath, String trainFilePath, 
+			String adaOptions) {
+		DiffCls_Ada myAdaboost = new DiffCls_Ada(logFilePath);
+		myAdaboost.readTrainingData(trainFilePath);
+		double aver_errorRate = myAdaboost.runAdaCVProcess(adaOptions);
+	}
+
+	public void readTrainingData(String trainFilePath) {
+		// Read the training data :
+		DataSource source = null;
+		Instances trainData = null;
+		try {
+			source = new DataSource(trainFilePath);
+			trainData = source.getDataSet();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		trainData.setClassIndex(trainData.numAttributes() - 1);
+
+		// 1. Fill the missing values and resample:
+		try {
+			Instances missValueReplacedData = FillMissingValue.fillMissingValues(trainData);
+			this.balancedData = MyResampler.resampleToBalance(missValueReplacedData);
+
+		} catch (Exception e) {
+			Log.addLogToThisPath("ERROR - Data preprocessing error.\n", this.logFilePath);
+			e.printStackTrace();
+			System.exit(1);
+		}
+	}
+
+	public double runAdaCVProcess(String adaOptions) {
+		// Use cross validation to run the adaboost:
+		AdaBoostM1 adaboost = new AdaBoostM1();
+		try {
+			adaboost.setOptions(weka.core.Utils.splitOptions(adaOptions));
+		} catch (Exception e) {
+			Log.addLogToThisPath("ERROR - cannot set adaboost options.\n", this.logFilePath);
+			e.printStackTrace();
+			System.exit(1);
+		}
+		
+		// Randomize the order of training data
+		Random rand = new Random((long) this.seed);
+		Instances randData = new Instances(this.balancedData);
+		randData.randomize(rand);
+		
+		for (int iter = 0; iter < this.fold; ++iter) {
+			Instances trainData = randData.trainCV(this.fold, iter);
+			Instances testData = randData.testCV(this.fold, iter);
+			
+		}
+
+		/*
+		double sum_of_err = 0;
+		// Change the number of iteration for each round.
+			AdaBoostM1 adaboost = new AdaBoostM1();
+			NBTree nbtModel = new NBTree();
+			adaboost.setClassifier(nbtModel);
+			adaboost.setOptions(new String[] {"-S", 
+					new Integer(random.nextInt()).toString(),
+					// The number of iterations = Current Round Number + 9 !!!
+					"-I", new Integer(i + 9).toString()});
+
+			adaboost.buildClassifier(data);
+			//System.out.println("Current options of the classifier: " + 
+			//		Arrays.toString(adaboost.getOptions()));
+
+			// Evaluation:
+			Evaluation eval = new Evaluation(data);
+			Instances testData = new DataSource(args[1]).getDataSet();
+			testData.setClassIndex(testData.numAttributes() - 1);
+			eval.evaluateModel(adaboost, testData);
+			System.out.println("Error rate of round " + i + " : " + eval.errorRate());
+			sum_of_err += eval.errorRate();
+		 */
+	}
+
+	public static Classifier buildModel(String modelChoice, 
+			String logFilePath) {
+		if (modelChoice.equals("-c45")) {
+			return new J48();
+		}
+		else if (modelChoice.equals("-knn")) {
+			return new IBk();
+		}
+		else if (modelChoice.equals("-logr")) {
+			return new Logistic();
+		}
+		else if (modelChoice.equals("-nb")) {
+			return new NaiveBayes();
+		}
+		else if (modelChoice.equals("-nbt")) {
+			return new NBTree();
+		}
+		else if (modelChoice.equals("-smo")) {
+			return new SMO();
+		}
+		else {
+			Log.addLogToThisPath("ERROR - wrong choice of " +
+					"classifier.\n", logFilePath);
+			return null;
+		}
+	}
+
+	public static void setClsOptions(String[] options, Classifier model, 
+			String logFilePath) {
+		try {
+			model.setOptions(options);
+		} catch (Exception e) {
+			Log.addLogToThisPath("ERROR - Cannot set options for the base " +
+					"classifier in Adaboost.\n", logFilePath);
+			e.printStackTrace();
+			System.exit(1);
+		}
+	}
+}

@@ -5,6 +5,7 @@ import java.util.Arrays;
 import myutil.Log;
 import myutil.ResultList;
 import classifier.DiffClassifier;
+import classifier.DiffCls_Ada;
 
 public class MainDriver {
 	/**
@@ -15,6 +16,8 @@ public class MainDriver {
 	 */
 	public static void main(String[] args) throws IOException {
 		if (args[0].equals("-allclstest")) {
+			// args[1] = log file path
+			// args[2] = train arff path
 			File logFile = new File(args[1]);
 			if (logFile.exists()) {
 				logFile.delete();
@@ -23,6 +26,109 @@ public class MainDriver {
 
 			MainDriver.runAllClassifiers(args[1], args[2]);
 		}
+		else if (args[0].equals("-boosttest")) {
+			// args[1] = log file path
+			// args[2] = train arff path
+			File logFile = new File(args[1]);
+			if (logFile.exists()) {
+				logFile.delete();
+			}
+			logFile.createNewFile();
+
+			MainDriver.runAllBoosting(args[1], args[2]);
+		}
+		
+		/*
+		File logFile = new File("/home/elfin/workspace/OngoingProjects/DataMining_Project/adalog");
+		if (logFile.exists()) {
+			logFile.delete();
+		}
+		logFile.createNewFile();
+		
+		DiffCls_Ada.runTestOnAdaBoost(logFile.getAbsolutePath(), "/home/elfin/workspace/OngoingProjects/DataMining_Project/data/train.arff", 
+				"/home/elfin/workspace/OngoingProjects/DataMining_Project/data/test.arff", "-I 10 -W \"weka.classifiers.trees.J48\" -- -C 0.25 -S -A");
+
+		MainDriver.runAllBoosting("/home/elfin/workspace/OngoingProjects/DataMining_Project/adalog", "/home/elfin/workspace/OngoingProjects/DataMining_Project/data/train.arff");
+		
+		*/
+		
+	}
+	
+	public static void runAllBoosting(String logFilePath, String trainArffPath) {
+		// 1.1  C4.5, iteration = 10:
+		Log.addLogToThisPath("=====Adaboost iteration = 10 , C4.5 [-C 0.25 -S -A] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 10 -W \"weka.classifiers.trees.J48\" -- -C 0.25 -S -A");
+		Log.addLogToThisPath("=====Adaboost iteration = 10 , C4.5 [-C 0.35 -S -A] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 10 -W \"weka.classifiers.trees.J48\" -- -C 0.35 -S -A");
+		Log.addLogToThisPath("=====Adaboost iteration = 10 , C4.5 [-C 0.45 -S -A] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 10 -W \"weka.classifiers.trees.J48\" -- -C 0.45 -S -A");
+		// 1.2  C4.5, iteration = 15:
+		Log.addLogToThisPath("=====Adaboost iteration = 15 , C4.5 [-C 0.25 -S -A] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 15 -W \"weka.classifiers.trees.J48\" -- -C 0.25 -S -A");
+		Log.addLogToThisPath("=====Adaboost iteration = 15 , C4.5 [-C 0.35 -S -A] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 15 -W \"weka.classifiers.trees.J48\" -- -C 0.35 -S -A");
+		Log.addLogToThisPath("=====Adaboost iteration = 15 , C4.5 [-C 0.45 -S -A] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 15 -W \"weka.classifiers.trees.J48\" -- -C 0.45 -S -A");
+		// 1.3 C4.5, iteration = 20:
+		Log.addLogToThisPath("=====Adaboost iteration = 20 , C4.5 [-C 0.25 -S -A] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 20 -W \"weka.classifiers.trees.J48\" -- -C 0.25 -S -A");
+		Log.addLogToThisPath("=====Adaboost iteration = 20 , C4.5 [-C 0.35 -S -A] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 20 -W \"weka.classifiers.trees.J48\" -- -C 0.35 -S -A");
+		Log.addLogToThisPath("=====Adaboost iteration = 20 , C4.5 [-C 0.45 -S -A] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 20 -W \"weka.classifiers.trees.J48\" -- -C 0.45 -S -A");
+		
+		// 2.1 KNN, iteration = 10:		
+		Log.addLogToThisPath("=====Adaboost itreation = 10, KNN [-K 1] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 10 -W \"weka.classifiers.lazy.IBk\" -- -K 1");
+		Log.addLogToThisPath("=====Adaboost itreation = 10, KNN [-K 3] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 10 -W \"weka.classifiers.lazy.IBk\" -- -K 3");
+		// 2.2 KNN, iteration = 15:
+		Log.addLogToThisPath("=====Adaboost itreation = 15, KNN [-K 1] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 15 -W \"weka.classifiers.lazy.IBk\" -- -K 1");
+		Log.addLogToThisPath("=====Adaboost itreation = 15, KNN [-K 3] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 15 -W \"weka.classifiers.lazy.IBk\" -- -K 3");
+		// 2.3 KNN, iteration = 20:
+		Log.addLogToThisPath("=====Adaboost itreation = 20, KNN [-K 1] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 20 -W \"weka.classifiers.lazy.IBk\" -- -K 1");
+		Log.addLogToThisPath("=====Adaboost itreation = 20, KNN [-K 3] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 20 -W \"weka.classifiers.lazy.IBk\" -- -K 3");
+		
+		// 3. Naive Bayes:
+		Log.addLogToThisPath("=====Adaboost itreation = 10, NaiveBayes [-D] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 10 -W \"weka.classifiers.bayes.NaiveBayes\" -- -D");
+		Log.addLogToThisPath("=====Adaboost itreation = 15, NaiveBayes [-D] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 15 -W \"weka.classifiers.bayes.NaiveBayes\" -- -D");
+		Log.addLogToThisPath("=====Adaboost itreation = 20, NaiveBayes [-D] =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 20 -W \"weka.classifiers.bayes.NaiveBayes\" -- -D");
+		
+		// 4. NB Tree
+		Log.addLogToThisPath("=====Adaboost itreation = 10, NBTree =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 10 -W \"weka.classifiers.trees.NBTree\"");
+		Log.addLogToThisPath("=====Adaboost itreation = 15, NBTree =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 15 -W \"weka.classifiers.trees.NBTree\"");
+		Log.addLogToThisPath("=====Adaboost itreation = 20, NBTree =====\n", logFilePath);
+		DiffCls_Ada.run(logFilePath, trainArffPath, 
+				"-I 20 -W \"weka.classifiers.trees.NBTree\"");
 		
 	}
 

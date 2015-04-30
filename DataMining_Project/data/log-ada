@@ -1,0 +1,867 @@
+=====Adaboost iteration = 10 , C4.5 [-C 0.25 -S -A] =====
+[-I, 10, -W, weka.classifiers.trees.J48, --, -C, 0.25, -S, -A]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 1: 0.0===
+===TRAIN True Positive Rate of Fold 1: 1.0===
+===TRAIN True Negative Rate of Fold 1: 1.0===
+===TEST Error Rate of Fold 1: 0.03681229773462783===
+===TEST True Positive Rate of Fold 1: 0.9415298358029636===
+===TEST True Negative Rate of Fold 1: 0.9852881078872088===
+2411.0	36.0	
+146.0	2351.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 2: 0.0===
+===TRAIN True Positive Rate of Fold 2: 1.0===
+===TRAIN True Negative Rate of Fold 2: 1.0===
+===TEST Error Rate of Fold 2: 0.032362459546925564===
+===TEST True Positive Rate of Fold 2: 0.9491593274619696===
+===TEST True Negative Rate of Fold 2: 0.9865085854456255===
+2413.0	33.0	
+127.0	2371.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 3: 0.0===
+===TRAIN True Positive Rate of Fold 3: 1.0===
+===TRAIN True Negative Rate of Fold 3: 1.0===
+===TEST Error Rate of Fold 3: 0.03478964401294499===
+===TEST True Positive Rate of Fold 3: 0.9483586869495596===
+===TEST True Negative Rate of Fold 3: 0.982420278004906===
+2403.0	43.0	
+129.0	2369.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 4: 0.0===
+===TRAIN True Positive Rate of Fold 4: 1.0===
+===TRAIN True Negative Rate of Fold 4: 1.0===
+===TEST Error Rate of Fold 4: 0.03398058252427184===
+===TEST True Positive Rate of Fold 4: 0.9471577261809447===
+===TEST True Negative Rate of Fold 4: 0.9852820932134096===
+2410.0	36.0	
+132.0	2366.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 5: 0.0===
+===TRAIN True Positive Rate of Fold 5: 1.0===
+===TRAIN True Negative Rate of Fold 5: 1.0===
+===TEST Error Rate of Fold 5: 0.03539644012944984===
+===TEST True Positive Rate of Fold 5: 0.94515612489992===
+===TEST True Negative Rate of Fold 5: 0.9844644317252658===
+2408.0	38.0	
+137.0	2361.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 6: 0.0===
+===TRAIN True Positive Rate of Fold 6: 1.0===
+===TRAIN True Negative Rate of Fold 6: 1.0===
+===TEST Error Rate of Fold 6: 0.0345873786407767===
+===TEST True Positive Rate of Fold 6: 0.9467574059247398===
+===TEST True Negative Rate of Fold 6: 0.9844644317252658===
+2408.0	38.0	
+133.0	2365.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 7: 0.0===
+===TRAIN True Positive Rate of Fold 7: 1.0===
+===TRAIN True Negative Rate of Fold 7: 1.0===
+===TEST Error Rate of Fold 7: 0.03519417475728155===
+===TEST True Positive Rate of Fold 7: 0.9459567654123299===
+===TEST True Negative Rate of Fold 7: 0.9840556009811938===
+2407.0	39.0	
+135.0	2363.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 8: 0.0===
+===TRAIN True Positive Rate of Fold 8: 1.0===
+===TRAIN True Negative Rate of Fold 8: 1.0===
+===TEST Error Rate of Fold 8: 0.03337378640776699===
+===TEST True Positive Rate of Fold 8: 0.9503602882305845===
+===TEST True Negative Rate of Fold 8: 0.9832379394930498===
+2405.0	41.0	
+124.0	2374.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 9: 0.0===
+===TRAIN True Positive Rate of Fold 9: 1.0===
+===TRAIN True Negative Rate of Fold 9: 1.0===
+===TEST Error Rate of Fold 9: 0.032766990291262135===
+===TEST True Positive Rate of Fold 9: 0.9507606084867894===
+===TEST True Negative Rate of Fold 9: 0.9840556009811938===
+2407.0	39.0	
+123.0	2375.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 10: 0.0===
+===TRAIN True Positive Rate of Fold 10: 1.0===
+===TRAIN True Negative Rate of Fold 10: 1.0===
+===TEST Error Rate of Fold 10: 0.03357605177993527===
+===TEST True Positive Rate of Fold 10: 0.9507606084867894===
+===TEST True Negative Rate of Fold 10: 0.982420278004906===
+2403.0	43.0	
+123.0	2375.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 0.0TRAIN TPR: 1.0TRAIN TNR: 1.0TEST error rate: 0.03428398058252427TEST TPR: 0.947595737783659TEST TNR: 0.9842197347462024*******************AVERAGE RESULTS*******************
+=====Adaboost iteration = 10 , C4.5 [-C 0.35 -S -A] =====
+[-I, 10, -W, weka.classifiers.trees.J48, --, -C, 0.35, -S, -A]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 1: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 1: 0.9999552492616128===
+===TRAIN True Negative Rate of Fold 1: 1.0===
+===TEST Error Rate of Fold 1: 0.03499190938511327===
+===TEST True Positive Rate of Fold 1: 0.946033024567056===
+===TEST True Negative Rate of Fold 1: 0.9841527834213735===
+2422.0	39.0	
+134.0	2349.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 2: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 2: 0.9999552492616128===
+===TRAIN True Negative Rate of Fold 2: 1.0===
+===TEST Error Rate of Fold 2: 0.03357605177993527===
+===TEST True Positive Rate of Fold 2: 0.9488521949254933===
+===TEST True Negative Rate of Fold 2: 0.9841527834213735===
+2422.0	39.0	
+127.0	2356.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 3: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 3: 0.9999552492616128===
+===TRAIN True Negative Rate of Fold 3: 1.0===
+===TEST Error Rate of Fold 3: 0.03843042071197411===
+===TEST True Positive Rate of Fold 3: 0.9383809907370116===
+===TEST True Negative Rate of Fold 3: 0.9849654611946363===
+2424.0	37.0	
+153.0	2330.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 4: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 4: 0.9999552492616128===
+===TRAIN True Negative Rate of Fold 4: 1.0===
+===TEST Error Rate of Fold 4: 0.03478964401294499===
+===TEST True Positive Rate of Fold 4: 0.946033024567056===
+===TEST True Negative Rate of Fold 4: 0.9845591223080049===
+2423.0	38.0	
+134.0	2349.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 5: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 5: 0.9999552492616128===
+===TRAIN True Negative Rate of Fold 5: 1.0===
+===TEST Error Rate of Fold 5: 0.0345873786407767===
+===TEST True Positive Rate of Fold 5: 0.9464357631896899===
+===TEST True Negative Rate of Fold 5: 0.9845591223080049===
+2423.0	38.0	
+133.0	2350.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 6: 0.0===
+===TRAIN True Positive Rate of Fold 6: 1.0===
+===TRAIN True Negative Rate of Fold 6: 1.0===
+===TEST Error Rate of Fold 6: 0.03539644012944984===
+===TEST True Positive Rate of Fold 6: 0.9524768425291985===
+===TEST True Negative Rate of Fold 6: 0.9768386834620073===
+2404.0	57.0	
+118.0	2365.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 7: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 7: 0.9999552492616128===
+===TRAIN True Negative Rate of Fold 7: 1.0===
+===TEST Error Rate of Fold 7: 0.029733009708737865===
+===TEST True Positive Rate of Fold 7: 0.9561014901329038===
+===TEST True Negative Rate of Fold 7: 0.9845591223080049===
+2423.0	38.0	
+109.0	2374.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 8: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 8: 0.9999552492616128===
+===TRAIN True Negative Rate of Fold 8: 1.0===
+===TEST Error Rate of Fold 8: 0.03216019417475728===
+===TEST True Positive Rate of Fold 8: 0.9532823197744664===
+===TEST True Negative Rate of Fold 8: 0.9825274278748476===
+2418.0	43.0	
+116.0	2367.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 9: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 9: 0.9999552492616128===
+===TRAIN True Negative Rate of Fold 9: 1.0===
+===TEST Error Rate of Fold 9: 0.03822815533980582===
+===TEST True Positive Rate of Fold 9: 0.9436165928312525===
+===TEST True Negative Rate of Fold 9: 0.980089394555059===
+2412.0	49.0	
+140.0	2343.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 10: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 10: 0.9999552512641517===
+===TRAIN True Negative Rate of Fold 10: 1.0===
+===TEST Error Rate of Fold 10: 0.03620550161812298===
+===TEST True Positive Rate of Fold 10: 0.9415793714746172===
+===TEST True Negative Rate of Fold 10: 0.9861900893582454===
+2428.0	34.0	
+145.0	2337.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 2.0226537216828476E-5TRAIN TPR: 0.9999597245357055TRAIN TNR: 1.0TEST error rate: 0.03480987055016181TEST TPR: 0.9472791614728745TEST TNR: 0.9832593990211557*******************AVERAGE RESULTS*******************
+=====Adaboost iteration = 10 , C4.5 [-C 0.45 -S -A] =====
+[-I, 10, -W, weka.classifiers.trees.J48, --, -C, 0.45, -S, -A]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 1: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 1: 0.9999547326965733===
+===TRAIN True Negative Rate of Fold 1: 1.0===
+===TEST Error Rate of Fold 1: 0.030946601941747573===
+===TEST True Positive Rate of Fold 1: 0.9506927465362673===
+===TEST True Negative Rate of Fold 1: 0.98714859437751===
+2458.0	32.0	
+121.0	2333.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 2: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 2: 0.9999547326965733===
+===TRAIN True Negative Rate of Fold 2: 1.0===
+===TEST Error Rate of Fold 2: 0.0345873786407767===
+===TEST True Positive Rate of Fold 2: 0.9445802770986145===
+===TEST True Negative Rate of Fold 2: 0.9859437751004017===
+2455.0	35.0	
+136.0	2318.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 3: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 3: 0.9999547326965733===
+===TRAIN True Negative Rate of Fold 3: 1.0===
+===TEST Error Rate of Fold 3: 0.03539644012944984===
+===TEST True Positive Rate of Fold 3: 0.9425427872860636===
+===TEST True Negative Rate of Fold 3: 0.9863453815261044===
+2456.0	34.0	
+141.0	2313.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 4: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 4: 0.9999547326965733===
+===TRAIN True Negative Rate of Fold 4: 1.0===
+===TEST Error Rate of Fold 4: 0.03519417475728155===
+===TEST True Positive Rate of Fold 4: 0.9449877750611247===
+===TEST True Negative Rate of Fold 4: 0.9843373493975903===
+2451.0	39.0	
+135.0	2319.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 5: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 5: 0.9999547326965733===
+===TRAIN True Negative Rate of Fold 5: 1.0===
+===TEST Error Rate of Fold 5: 0.037419093851132686===
+===TEST True Positive Rate of Fold 5: 0.9417277913610432===
+===TEST True Negative Rate of Fold 5: 0.983132530120482===
+2448.0	42.0	
+143.0	2311.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 6: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 6: 0.9999547306473517===
+===TRAIN True Negative Rate of Fold 6: 1.0===
+===TEST Error Rate of Fold 6: 0.03256472491909385===
+===TEST True Positive Rate of Fold 6: 0.95030549898167===
+===TEST True Negative Rate of Fold 6: 0.9843310566492567===
+2450.0	39.0	
+122.0	2333.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 7: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 7: 0.9999547306473517===
+===TRAIN True Negative Rate of Fold 7: 1.0===
+===TEST Error Rate of Fold 7: 0.03640776699029126===
+===TEST True Positive Rate of Fold 7: 0.9429735234215886===
+===TEST True Negative Rate of Fold 7: 0.9839292888710326===
+2449.0	40.0	
+140.0	2315.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 8: 0.0===
+===TRAIN True Positive Rate of Fold 8: 1.0===
+===TRAIN True Negative Rate of Fold 8: 1.0===
+===TEST Error Rate of Fold 8: 0.0345873786407767===
+===TEST True Positive Rate of Fold 8: 0.9470468431771895===
+===TEST True Negative Rate of Fold 8: 0.9835275210928084===
+2448.0	41.0	
+130.0	2325.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 9: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 9: 0.9999547306473517===
+===TRAIN True Negative Rate of Fold 9: 1.0===
+===TEST Error Rate of Fold 9: 0.03539644012944984===
+===TEST True Positive Rate of Fold 9: 0.9458248472505092===
+===TEST True Negative Rate of Fold 9: 0.9831257533145842===
+2447.0	42.0	
+133.0	2322.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 10: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 10: 0.9999547306473517===
+===TRAIN True Negative Rate of Fold 10: 1.0===
+===TEST Error Rate of Fold 10: 0.03782362459546926===
+===TEST True Positive Rate of Fold 10: 0.9458248472505092===
+===TEST True Negative Rate of Fold 10: 0.978304539975894===
+2435.0	54.0	
+133.0	2322.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 2.0226537216828476E-5TRAIN TPR: 0.9999592586072271TRAIN TNR: 1.0TEST error rate: 0.035032362459546926TEST TPR: 0.9456506937424581TEST TNR: 0.9840125790425664*******************AVERAGE RESULTS*******************
+=====Adaboost iteration = 15 , C4.5 [-C 0.25 -S -A] =====
+[-I, 15, -W, weka.classifiers.trees.J48, --, -C, 0.25, -S, -A]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 1: 0.0===
+===TRAIN True Positive Rate of Fold 1: 1.0===
+===TRAIN True Negative Rate of Fold 1: 1.0===
+===TEST Error Rate of Fold 1: 0.03256472491909385===
+===TEST True Positive Rate of Fold 1: 0.9546925566343042===
+===TEST True Negative Rate of Fold 1: 0.9801779935275081===
+2423.0	49.0	
+112.0	2360.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 2: 0.0===
+===TRAIN True Positive Rate of Fold 2: 1.0===
+===TRAIN True Negative Rate of Fold 2: 1.0===
+===TEST Error Rate of Fold 2: 0.031351132686084145===
+===TEST True Positive Rate of Fold 2: 0.9518608414239482===
+===TEST True Negative Rate of Fold 2: 0.9854368932038835===
+2436.0	36.0	
+119.0	2353.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 3: 0.0===
+===TRAIN True Positive Rate of Fold 3: 1.0===
+===TRAIN True Negative Rate of Fold 3: 1.0===
+===TEST Error Rate of Fold 3: 0.03337378640776699===
+===TEST True Positive Rate of Fold 3: 0.948220064724919===
+===TEST True Negative Rate of Fold 3: 0.985032362459547===
+2435.0	37.0	
+128.0	2344.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 4: 0.0===
+===TRAIN True Positive Rate of Fold 4: 1.0===
+===TRAIN True Negative Rate of Fold 4: 1.0===
+===TEST Error Rate of Fold 4: 0.03519417475728155===
+===TEST True Positive Rate of Fold 4: 0.9421521035598706===
+===TEST True Negative Rate of Fold 4: 0.9874595469255664===
+2441.0	31.0	
+143.0	2329.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 5: 0.0===
+===TRAIN True Positive Rate of Fold 5: 1.0===
+===TRAIN True Negative Rate of Fold 5: 1.0===
+===TEST Error Rate of Fold 5: 0.03216019417475728===
+===TEST True Positive Rate of Fold 5: 0.9538834951456311===
+===TEST True Negative Rate of Fold 5: 0.9817961165048543===
+2427.0	45.0	
+114.0	2358.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 6: 0.0===
+===TRAIN True Positive Rate of Fold 6: 1.0===
+===TRAIN True Negative Rate of Fold 6: 1.0===
+===TEST Error Rate of Fold 6: 0.03114886731391586===
+===TEST True Positive Rate of Fold 6: 0.9522460542290571===
+===TEST True Negative Rate of Fold 6: 0.9854427820460978===
+2437.0	36.0	
+118.0	2353.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 7: 0.0===
+===TRAIN True Positive Rate of Fold 7: 1.0===
+===TRAIN True Negative Rate of Fold 7: 1.0===
+===TEST Error Rate of Fold 7: 0.03296925566343042===
+===TEST True Positive Rate of Fold 7: 0.952650748684743===
+===TEST True Negative Rate of Fold 7: 0.9813991103922362===
+2427.0	46.0	
+117.0	2354.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 8: 0.0===
+===TRAIN True Positive Rate of Fold 8: 1.0===
+===TRAIN True Negative Rate of Fold 8: 1.0===
+===TEST Error Rate of Fold 8: 0.03317152103559871===
+===TEST True Positive Rate of Fold 8: 0.9546742209631728===
+===TEST True Negative Rate of Fold 8: 0.9789729073999192===
+2421.0	52.0	
+112.0	2359.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 9: 0.0===
+===TRAIN True Positive Rate of Fold 9: 1.0===
+===TRAIN True Negative Rate of Fold 9: 1.0===
+===TEST Error Rate of Fold 9: 0.0345873786407767===
+===TEST True Positive Rate of Fold 9: 0.9461756373937678===
+===TEST True Negative Rate of Fold 9: 0.9846340477153255===
+2435.0	38.0	
+133.0	2338.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 10: 0.0===
+===TRAIN True Positive Rate of Fold 10: 1.0===
+===TRAIN True Negative Rate of Fold 10: 1.0===
+===TEST Error Rate of Fold 10: 0.031957928802589===
+===TEST True Positive Rate of Fold 10: 0.9518413597733711===
+===TEST True Negative Rate of Fold 10: 0.9842296805499393===
+2434.0	39.0	
+119.0	2352.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 0.0TRAIN TPR: 1.0TRAIN TNR: 1.0TEST error rate: 0.032847896440129455TEST TPR: 0.9508397082532787TEST TNR: 0.9834581440724877*******************AVERAGE RESULTS*******************
+=====Adaboost iteration = 15 , C4.5 [-C 0.35 -S -A] =====
+[-I, 15, -W, weka.classifiers.trees.J48, --, -C, 0.35, -S, -A]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 1: 0.0===
+===TRAIN True Positive Rate of Fold 1: 1.0===
+===TRAIN True Negative Rate of Fold 1: 1.0===
+===TEST Error Rate of Fold 1: 0.039037216828478966===
+===TEST True Positive Rate of Fold 1: 0.9374495560936239===
+===TEST True Negative Rate of Fold 1: 0.9845904298459043===
+2428.0	38.0	
+155.0	2323.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 2: 0.0===
+===TRAIN True Positive Rate of Fold 2: 1.0===
+===TRAIN True Negative Rate of Fold 2: 1.0===
+===TEST Error Rate of Fold 2: 0.03762135922330097===
+===TEST True Positive Rate of Fold 2: 0.9479418886198547===
+===TEST True Negative Rate of Fold 2: 0.9768856447688564===
+2409.0	57.0	
+129.0	2349.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 3: 0.0===
+===TRAIN True Positive Rate of Fold 3: 1.0===
+===TRAIN True Negative Rate of Fold 3: 1.0===
+===TEST Error Rate of Fold 3: 0.03357605177993527===
+===TEST True Positive Rate of Fold 3: 0.9511702986279258===
+===TEST True Negative Rate of Fold 3: 0.9817518248175182===
+2421.0	45.0	
+121.0	2357.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 4: 0.0===
+===TRAIN True Positive Rate of Fold 4: 1.0===
+===TRAIN True Negative Rate of Fold 4: 1.0===
+===TEST Error Rate of Fold 4: 0.02912621359223301===
+===TEST True Positive Rate of Fold 4: 0.9600484261501211===
+===TEST True Negative Rate of Fold 4: 0.9817518248175182===
+2421.0	45.0	
+99.0	2379.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 5: 0.0===
+===TRAIN True Positive Rate of Fold 5: 1.0===
+===TRAIN True Negative Rate of Fold 5: 1.0===
+===TEST Error Rate of Fold 5: 0.04004854368932039===
+===TEST True Positive Rate of Fold 5: 0.9451170298627926===
+===TEST True Negative Rate of Fold 5: 0.9748580697485807===
+2404.0	62.0	
+136.0	2342.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 6: 0.0===
+===TRAIN True Positive Rate of Fold 6: 1.0===
+===TRAIN True Negative Rate of Fold 6: 1.0===
+===TEST Error Rate of Fold 6: 0.03317152103559871===
+===TEST True Positive Rate of Fold 6: 0.9552058111380145===
+===TEST True Negative Rate of Fold 6: 0.9785077047850771===
+2413.0	53.0	
+111.0	2367.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 7: 0.0===
+===TRAIN True Positive Rate of Fold 7: 1.0===
+===TRAIN True Negative Rate of Fold 7: 1.0===
+===TEST Error Rate of Fold 7: 0.031957928802589===
+===TEST True Positive Rate of Fold 7: 0.953591606133979===
+===TEST True Negative Rate of Fold 7: 0.9825628548256286===
+2423.0	43.0	
+115.0	2363.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 8: 0.0===
+===TRAIN True Positive Rate of Fold 8: 1.0===
+===TRAIN True Negative Rate of Fold 8: 1.0===
+===TEST Error Rate of Fold 8: 0.03519417475728155===
+===TEST True Positive Rate of Fold 8: 0.9439063761097659===
+===TEST True Negative Rate of Fold 8: 0.9858069748580698===
+2431.0	35.0	
+139.0	2339.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 9: 0.0===
+===TRAIN True Positive Rate of Fold 9: 1.0===
+===TRAIN True Negative Rate of Fold 9: 1.0===
+===TEST Error Rate of Fold 9: 0.03033980582524272===
+===TEST True Positive Rate of Fold 9: 0.9560129136400323===
+===TEST True Negative Rate of Fold 9: 0.9833738848337389===
+2425.0	41.0	
+109.0	2369.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 10: 0.0===
+===TRAIN True Positive Rate of Fold 10: 1.0===
+===TRAIN True Negative Rate of Fold 10: 1.0===
+===TEST Error Rate of Fold 10: 0.03296925566343042===
+===TEST True Positive Rate of Fold 10: 0.9487489911218725===
+===TEST True Negative Rate of Fold 10: 0.9854014598540146===
+2430.0	36.0	
+127.0	2351.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 0.0TRAIN TPR: 1.0TRAIN TNR: 1.0TEST error rate: 0.034304207119741095TEST TPR: 0.9499192897497982TEST TNR: 0.9815490673154906*******************AVERAGE RESULTS*******************
+=====Adaboost iteration = 15 , C4.5 [-C 0.45 -S -A] =====
+[-I, 15, -W, weka.classifiers.trees.J48, --, -C, 0.45, -S, -A]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 1: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 1: 0.9999552071668533===
+===TRAIN True Negative Rate of Fold 1: 1.0===
+===TEST Error Rate of Fold 1: 0.03539644012944984===
+===TEST True Positive Rate of Fold 1: 0.951229343006852===
+===TEST True Negative Rate of Fold 1: 0.9780755176613886===
+2409.0	54.0	
+121.0	2360.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 2: 0.0===
+===TRAIN True Positive Rate of Fold 2: 1.0===
+===TRAIN True Negative Rate of Fold 2: 1.0===
+===TEST Error Rate of Fold 2: 0.03398058252427184===
+===TEST True Positive Rate of Fold 2: 0.9500201531640468===
+===TEST True Negative Rate of Fold 2: 0.9821356069833537===
+2419.0	44.0	
+124.0	2357.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 3: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 3: 0.9999552071668533===
+===TRAIN True Negative Rate of Fold 3: 1.0===
+===TEST Error Rate of Fold 3: 0.03519417475728155===
+===TEST True Positive Rate of Fold 3: 0.9480048367593712===
+===TEST True Negative Rate of Fold 3: 0.9817295980511571===
+2418.0	45.0	
+129.0	2352.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 4: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 4: 0.9999552071668533===
+===TRAIN True Negative Rate of Fold 4: 1.0===
+===TEST Error Rate of Fold 4: 0.03539644012944984===
+===TEST True Positive Rate of Fold 4: 0.9443772672309553===
+===TEST True Negative Rate of Fold 4: 0.9849776695087292===
+2426.0	37.0	
+138.0	2343.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 5: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 5: 0.9999552071668533===
+===TRAIN True Negative Rate of Fold 5: 1.0===
+===TEST Error Rate of Fold 5: 0.036003236245954695===
+===TEST True Positive Rate of Fold 5: 0.9427650141072148===
+===TEST True Negative Rate of Fold 5: 0.9853836784409257===
+2427.0	36.0	
+142.0	2339.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 6: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 6: 0.9999552071668533===
+===TRAIN True Negative Rate of Fold 6: 1.0===
+===TEST Error Rate of Fold 6: 0.032362459546925564===
+===TEST True Positive Rate of Fold 6: 0.9520354695687223===
+===TEST True Negative Rate of Fold 6: 0.9833536337799431===
+2422.0	41.0	
+119.0	2362.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 7: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 7: 0.9999552091731614===
+===TRAIN True Negative Rate of Fold 7: 1.0===
+===TEST Error Rate of Fold 7: 0.03216019417475728===
+===TEST True Positive Rate of Fold 7: 0.9459677419354838===
+===TEST True Negative Rate of Fold 7: 0.9898538961038961===
+2439.0	25.0	
+134.0	2346.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 8: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 8: 1.0===
+===TRAIN True Negative Rate of Fold 8: 0.9999548940009021===
+===TEST Error Rate of Fold 8: 0.03661003236245955===
+===TEST True Positive Rate of Fold 8: 0.9463709677419355===
+===TEST True Negative Rate of Fold 8: 0.9805194805194806===
+2416.0	48.0	
+133.0	2347.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 9: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 9: 0.9999552091731614===
+===TRAIN True Negative Rate of Fold 9: 1.0===
+===TEST Error Rate of Fold 9: 0.040655339805825245===
+===TEST True Positive Rate of Fold 9: 0.9387096774193548===
+===TEST True Negative Rate of Fold 9: 0.9801136363636364===
+2415.0	49.0	
+152.0	2328.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 10: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 10: 0.9999552091731614===
+===TRAIN True Negative Rate of Fold 10: 1.0===
+===TEST Error Rate of Fold 10: 0.03398058252427184===
+===TEST True Positive Rate of Fold 10: 0.9463709677419355===
+===TEST True Negative Rate of Fold 10: 0.9857954545454546===
+2429.0	35.0	
+133.0	2347.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 2.0226537216828476E-5TRAIN TPR: 0.9999641663353753TRAIN TNR: 0.9999954894000902TEST error rate: 0.03517394822006472TEST TPR: 0.9465851438675873TEST TNR: 0.9831938171957966*******************AVERAGE RESULTS*******************
+=====Adaboost iteration = 20 , C4.5 [-C 0.25 -S -A] =====
+[-I, 20, -W, weka.classifiers.trees.J48, --, -C, 0.25, -S, -A]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 1: 4.494786048184106E-5===
+===TRAIN True Positive Rate of Fold 1: 1.0===
+===TRAIN True Negative Rate of Fold 1: 0.9999107222569413===
+===TEST Error Rate of Fold 1: 0.03559870550161812===
+===TEST True Positive Rate of Fold 1: 0.9401221995926681===
+===TEST True Negative Rate of Fold 1: 0.9883487344314986===
+2460.0	29.0	
+147.0	2308.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 2: 4.494786048184106E-5===
+===TRAIN True Positive Rate of Fold 2: 1.0===
+===TRAIN True Negative Rate of Fold 2: 0.9999107222569413===
+===TEST Error Rate of Fold 2: 0.03398058252427184===
+===TEST True Positive Rate of Fold 2: 0.9466395112016294===
+===TEST True Negative Rate of Fold 2: 0.9851345922057051===
+2452.0	37.0	
+131.0	2324.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 3: 4.494786048184106E-5===
+===TRAIN True Positive Rate of Fold 3: 0.9999094776862497===
+===TRAIN True Negative Rate of Fold 3: 1.0===
+===TEST Error Rate of Fold 3: 0.034385113268608415===
+===TEST True Positive Rate of Fold 3: 0.9482688391038696===
+===TEST True Negative Rate of Fold 3: 0.98272398553636===
+2446.0	43.0	
+127.0	2328.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 4: 4.494786048184106E-5===
+===TRAIN True Positive Rate of Fold 4: 0.9999094776862497===
+===TRAIN True Negative Rate of Fold 4: 1.0===
+===TEST Error Rate of Fold 4: 0.038632686084142394===
+===TEST True Positive Rate of Fold 4: 0.9384928716904277===
+===TEST True Negative Rate of Fold 4: 0.9839292888710326===
+2449.0	40.0	
+151.0	2304.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 5: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 5: 0.9999547388431248===
+===TRAIN True Negative Rate of Fold 5: 1.0===
+===TEST Error Rate of Fold 5: 0.034385113268608415===
+===TEST True Positive Rate of Fold 5: 0.9458248472505092===
+===TEST True Negative Rate of Fold 5: 0.9851345922057051===
+2452.0	37.0	
+133.0	2322.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 6: 4.494786048184106E-5===
+===TRAIN True Positive Rate of Fold 6: 0.9999094776862497===
+===TRAIN True Negative Rate of Fold 6: 1.0===
+===TEST Error Rate of Fold 6: 0.03539644012944984===
+===TEST True Positive Rate of Fold 6: 0.9446028513238289===
+===TEST True Negative Rate of Fold 6: 0.9843310566492567===
+2450.0	39.0	
+136.0	2319.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 7: 4.494786048184106E-5===
+===TRAIN True Positive Rate of Fold 7: 0.9999094776862497===
+===TRAIN True Negative Rate of Fold 7: 1.0===
+===TEST Error Rate of Fold 7: 0.03377831715210356===
+===TEST True Positive Rate of Fold 7: 0.9446028513238289===
+===TEST True Negative Rate of Fold 7: 0.9875451988750502===
+2458.0	31.0	
+136.0	2319.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 8: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 8: 0.9999547388431248===
+===TRAIN True Negative Rate of Fold 8: 1.0===
+===TEST Error Rate of Fold 8: 0.03782362459546926===
+===TEST True Positive Rate of Fold 8: 0.9425661914460285===
+===TEST True Negative Rate of Fold 8: 0.9815186822016875===
+2443.0	46.0	
+141.0	2314.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 9: 4.494786048184106E-5===
+===TRAIN True Positive Rate of Fold 9: 0.9999094776862497===
+===TRAIN True Negative Rate of Fold 9: 1.0===
+===TEST Error Rate of Fold 9: 0.03802588996763754===
+===TEST True Positive Rate of Fold 9: 0.9433808553971487===
+===TEST True Negative Rate of Fold 9: 0.9803133788670149===
+2440.0	49.0	
+139.0	2316.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.25, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 10: 4.494786048184106E-5===
+===TRAIN True Positive Rate of Fold 10: 0.9999094817832088===
+===TRAIN True Negative Rate of Fold 10: 1.0===
+===TEST Error Rate of Fold 10: 0.036003236245954695===
+===TEST True Positive Rate of Fold 10: 0.947840260798696===
+===TEST True Negative Rate of Fold 10: 0.9799196787148594===
+2440.0	50.0	
+128.0	2326.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 4.045307443365695E-5TRAIN TPR: 0.9999366347900708TRAIN TNR: 0.9999821444513882TEST error rate: 0.035800970873786406TEST TPR: 0.9442341279128634TEST TNR: 0.9838899188558171*******************AVERAGE RESULTS*******************
+=====Adaboost iteration = 20 , C4.5 [-C 0.35 -S -A] =====
+[-I, 20, -W, weka.classifiers.trees.J48, --, -C, 0.35, -S, -A]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 1: 0.0===
+===TRAIN True Positive Rate of Fold 1: 1.0===
+===TRAIN True Negative Rate of Fold 1: 1.0===
+===TEST Error Rate of Fold 1: 0.037014563106796114===
+===TEST True Positive Rate of Fold 1: 0.942775974025974===
+===TEST True Negative Rate of Fold 1: 0.9830645161290322===
+2438.0	42.0	
+141.0	2323.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 2: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 2: 1.0===
+===TRAIN True Negative Rate of Fold 2: 0.9999551971326165===
+===TEST Error Rate of Fold 2: 0.03499190938511327===
+===TEST True Positive Rate of Fold 2: 0.948051948051948===
+===TEST True Negative Rate of Fold 2: 0.9818548387096774===
+2435.0	45.0	
+128.0	2336.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 3: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 3: 1.0===
+===TRAIN True Negative Rate of Fold 3: 0.9999551971326165===
+===TEST Error Rate of Fold 3: 0.03620550161812298===
+===TEST True Positive Rate of Fold 3: 0.9407467532467533===
+===TEST True Negative Rate of Fold 3: 0.9866935483870968===
+2447.0	33.0	
+146.0	2318.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 4: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 4: 1.0===
+===TRAIN True Negative Rate of Fold 4: 0.9999551971326165===
+===TEST Error Rate of Fold 4: 0.03216019417475728===
+===TEST True Positive Rate of Fold 4: 0.9488636363636364===
+===TEST True Negative Rate of Fold 4: 0.9866935483870968===
+2447.0	33.0	
+126.0	2338.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 5: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 5: 1.0===
+===TRAIN True Negative Rate of Fold 5: 0.9999551971326165===
+===TEST Error Rate of Fold 5: 0.03822815533980582===
+===TEST True Positive Rate of Fold 5: 0.9354707792207793===
+===TEST True Negative Rate of Fold 5: 0.9879032258064516===
+2450.0	30.0	
+159.0	2305.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 6: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 6: 1.0===
+===TRAIN True Negative Rate of Fold 6: 0.9999551971326165===
+===TEST Error Rate of Fold 6: 0.03661003236245955===
+===TEST True Positive Rate of Fold 6: 0.939935064935065===
+===TEST True Negative Rate of Fold 6: 0.9866935483870968===
+2447.0	33.0	
+148.0	2316.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 7: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 7: 1.0===
+===TRAIN True Negative Rate of Fold 7: 0.9999551971326165===
+===TEST Error Rate of Fold 7: 0.03418284789644013===
+===TEST True Positive Rate of Fold 7: 0.9517045454545454===
+===TEST True Negative Rate of Fold 7: 0.9798387096774194===
+2430.0	50.0	
+119.0	2345.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 8: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 8: 1.0===
+===TRAIN True Negative Rate of Fold 8: 0.9999551971326165===
+===TEST Error Rate of Fold 8: 0.030137540453074433===
+===TEST True Positive Rate of Fold 8: 0.9553571428571429===
+===TEST True Negative Rate of Fold 8: 0.9842741935483871===
+2441.0	39.0	
+110.0	2354.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 9: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 9: 1.0===
+===TRAIN True Negative Rate of Fold 9: 0.9999551971326165===
+===TEST Error Rate of Fold 9: 0.03762135922330097===
+===TEST True Positive Rate of Fold 9: 0.9407467532467533===
+===TEST True Negative Rate of Fold 9: 0.9838709677419355===
+2440.0	40.0	
+146.0	2318.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.35, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 10: 0.0===
+===TRAIN True Positive Rate of Fold 10: 1.0===
+===TRAIN True Negative Rate of Fold 10: 1.0===
+===TEST Error Rate of Fold 10: 0.031957928802589===
+===TEST True Positive Rate of Fold 10: 0.9512987012987013===
+===TEST True Negative Rate of Fold 10: 0.9846774193548387===
+2442.0	38.0	
+120.0	2344.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 1.7979144192736424E-5TRAIN TPR: 1.0TRAIN TNR: 0.9999641577060933TEST error rate: 0.034911003236245956TEST TPR: 0.94549512987013TEST TNR: 0.9845564516129033*******************AVERAGE RESULTS*******************
+=====Adaboost iteration = 20 , C4.5 [-C 0.45 -S -A] =====
+[-I, 20, -W, weka.classifiers.trees.J48, --, -C, 0.45, -S, -A]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 1: 0.0===
+===TRAIN True Positive Rate of Fold 1: 1.0===
+===TRAIN True Negative Rate of Fold 1: 1.0===
+===TEST Error Rate of Fold 1: 0.0345873786407767===
+===TEST True Positive Rate of Fold 1: 0.952689041649818===
+===TEST True Negative Rate of Fold 1: 0.9781464993929583===
+2417.0	54.0	
+117.0	2356.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 2: 0.0===
+===TRAIN True Positive Rate of Fold 2: 1.0===
+===TRAIN True Negative Rate of Fold 2: 1.0===
+===TEST Error Rate of Fold 2: 0.0345873786407767===
+===TEST True Positive Rate of Fold 2: 0.9482410028305701===
+===TEST True Negative Rate of Fold 2: 0.9825981384055038===
+2428.0	43.0	
+128.0	2345.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 3: 0.0===
+===TRAIN True Positive Rate of Fold 3: 1.0===
+===TRAIN True Negative Rate of Fold 3: 1.0===
+===TEST Error Rate of Fold 3: 0.03559870550161812===
+===TEST True Positive Rate of Fold 3: 0.9462191670036393===
+===TEST True Negative Rate of Fold 3: 0.9825981384055038===
+2428.0	43.0	
+133.0	2340.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 4: 0.0===
+===TRAIN True Positive Rate of Fold 4: 1.0===
+===TRAIN True Negative Rate of Fold 4: 1.0===
+===TEST Error Rate of Fold 4: 0.030137540453074433===
+===TEST True Positive Rate of Fold 4: 0.955115244642135===
+===TEST True Negative Rate of Fold 4: 0.9846216106839336===
+2433.0	38.0	
+111.0	2362.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 5: 0.0===
+===TRAIN True Positive Rate of Fold 5: 1.0===
+===TRAIN True Negative Rate of Fold 5: 1.0===
+===TEST Error Rate of Fold 5: 0.03782362459546926===
+===TEST True Positive Rate of Fold 5: 0.9421754953497776===
+===TEST True Negative Rate of Fold 5: 0.9821934439498179===
+2427.0	44.0	
+143.0	2330.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 6: 0.0===
+===TRAIN True Positive Rate of Fold 6: 1.0===
+===TRAIN True Negative Rate of Fold 6: 1.0===
+===TEST Error Rate of Fold 6: 0.04146440129449838===
+===TEST True Positive Rate of Fold 6: 0.9357056207035989===
+===TEST True Negative Rate of Fold 6: 0.981384055038446===
+2425.0	46.0	
+159.0	2314.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 7: 0.0===
+===TRAIN True Positive Rate of Fold 7: 1.0===
+===TRAIN True Negative Rate of Fold 7: 1.0===
+===TEST Error Rate of Fold 7: 0.03519417475728155===
+===TEST True Positive Rate of Fold 7: 0.946645109135004===
+===TEST True Negative Rate of Fold 7: 0.982995951417004===
+2428.0	42.0	
+132.0	2342.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 8: 0.0===
+===TRAIN True Positive Rate of Fold 8: 1.0===
+===TRAIN True Negative Rate of Fold 8: 1.0===
+===TEST Error Rate of Fold 8: 0.03661003236245955===
+===TEST True Positive Rate of Fold 8: 0.9494745351657236===
+===TEST True Negative Rate of Fold 8: 0.977327935222672===
+2414.0	56.0	
+125.0	2349.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 9: 0.0===
+===TRAIN True Positive Rate of Fold 9: 1.0===
+===TRAIN True Negative Rate of Fold 9: 1.0===
+===TEST Error Rate of Fold 9: 0.03317152103559871===
+===TEST True Positive Rate of Fold 9: 0.9490703314470493===
+===TEST True Negative Rate of Fold 9: 0.9846153846153847===
+2432.0	38.0	
+126.0	2348.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.trees.J48, --, -S, -C, 0.45, -M, 2, -A, , , , , , , , ]
+===TRAIN Error Rate of Fold 10: 0.0===
+===TRAIN True Positive Rate of Fold 10: 1.0===
+===TRAIN True Negative Rate of Fold 10: 1.0===
+===TEST Error Rate of Fold 10: 0.03559870550161812===
+===TEST True Positive Rate of Fold 10: 0.9438156831042845===
+===TEST True Negative Rate of Fold 10: 0.9850202429149798===
+2433.0	37.0	
+139.0	2335.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 0.0TRAIN TPR: 1.0TRAIN TNR: 1.0TEST error rate: 0.035477346278317154TEST TPR: 0.9469151231031603TEST TNR: 0.9821501400046204*******************AVERAGE RESULTS*******************
+=====Adaboost itreation = 10, KNN [-K 1] =====
+[-I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 1]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 1, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 1: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 1: 0.9999551287804003===
+===TRAIN True Negative Rate of Fold 1: 1.0===
+===TEST Error Rate of Fold 1: 0.049352750809061485===
+===TEST True Positive Rate of Fold 1: 0.9228905934598305===
+===TEST True Negative Rate of Fold 1: 0.9785164167004459===
+2414.0	53.0	
+191.0	2286.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 1, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 2: 2.247393024092053E-5===
+===TRAIN True Positive Rate of Fold 2: 0.9999551287804003===
+===TRAIN True Negative Rate of Fold 2: 1.0===
+===TEST Error Rate of Fold 2: 0.049352750809061485===
+===TEST True Positive Rate of Fold 2: 0.9285425918449738===
+===TEST True Negative Rate of Fold 2: 0.9728415079043372===
+2400.0	67.0	
+177.0	2300.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 1, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]

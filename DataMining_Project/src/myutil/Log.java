@@ -13,24 +13,26 @@ public class Log {
 		System.out.print(log);
 		BufferedWriter bw;
 		try {
-			bw = new BufferedWriter(new FileWriter(path, true));
+			bw = new BufferedWriter(new FileWriter(path, true));// append
 			bw.write(log);
 			bw.close();
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
+			System.out.println("ERROR - LOG ERROR");
 			e1.printStackTrace();
-		} // append
+			System.exit(1);
+		} 
 	}
 	public void addLog(String log) {
 		System.out.print(log);
 		BufferedWriter bw;
 		try {
-			bw = new BufferedWriter(new FileWriter(this.logPath, true));
+			bw = new BufferedWriter(new FileWriter(this.logPath, true));// append
 			bw.write(log);
 			bw.close();
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
+			System.out.println("ERROR - LOG ERROR");
 			e1.printStackTrace();
-		} // append
+			System.exit(1);
+		}
 	}
 }

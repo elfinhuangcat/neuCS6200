@@ -6,6 +6,8 @@
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="MainDriver"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-boosttest /home/elfin/workspace/OngoingProjects/DataMining_Project/data/log-ada    /home/elfin/workspace/OngoingProjects/DataMining_Project/data/train.arff     /home/elfin/workspace/OngoingProjects/DataMining_Project/data/test.arff"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="DataMining_Project"/>
 </launchConfiguration>

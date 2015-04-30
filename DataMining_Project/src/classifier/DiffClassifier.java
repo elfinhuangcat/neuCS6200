@@ -96,7 +96,7 @@ public class DiffClassifier {
 	}
 
 	/**
-	 * balancedTrainDa
+	 * Build a classifier according to the input options and evaluation through cross validation.
 	 * @param trainData the training instances. It should be without missing value and balanced.
 	 * @param args[0] choice of classifier: ["-c45", "-knn", "-logr", "-nb", "-nbt", "-smo"]
 	 * @param args[after 0] options passed to the classifier.
@@ -109,10 +109,6 @@ public class DiffClassifier {
 		// Randomize data
 		Random rand = new Random(this.seed);
 		trainData.randomize(rand);
-
-		// TODO what's this?
-		// In case your data has a nominal class and you wanna perform stratified cross-validation:
-		// randData.stratify(folds);
 
 		double sumErrorRate = 0;
 		for (int n = 0; n < this.fold; ++n) {
