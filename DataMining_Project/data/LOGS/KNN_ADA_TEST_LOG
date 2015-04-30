@@ -1,0 +1,96 @@
+=====Adaboost itreation = 10, KNN [-K 3] =====
+[-I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 3]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 3, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 1: 0.021912081984897518===
+===TRAIN True Positive Rate of Fold 1: 0.9664061798257433===
+===TRAIN True Negative Rate of Fold 1: 0.9897885739991004===
+===TEST Error Rate of Fold 1: 0.07766990291262135===
+===TEST True Positive Rate of Fold 1: 0.8892033966841892===
+===TEST True Negative Rate of Fold 1: 0.9554836098745447===
+2361.0	110.0	
+274.0	2199.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 3, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 2: 0.022181769147788567===
+===TRAIN True Positive Rate of Fold 2: 0.9656860543453851===
+===TRAIN True Negative Rate of Fold 2: 0.9899689622599074===
+===TEST Error Rate of Fold 2: 0.0732200647249191===
+===TEST True Positive Rate of Fold 2: 0.8961196443007275===
+===TEST True Negative Rate of Fold 2: 0.9574898785425101===
+2365.0	105.0	
+257.0	2217.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 3, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 3: 0.022586299892125135===
+===TRAIN True Positive Rate of Fold 3: 0.964832697058163===
+===TRAIN True Negative Rate of Fold 3: 0.9900139444919257===
+===TEST Error Rate of Fold 3: 0.08070388349514564===
+===TEST True Positive Rate of Fold 3: 0.8872271624898949===
+===TEST True Negative Rate of Fold 3: 0.951417004048583===
+2350.0	120.0	
+279.0	2195.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 3, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 4: 0.022181769147788567===
+===TRAIN True Positive Rate of Fold 4: 0.96658432517404===
+===TRAIN True Negative Rate of Fold 4: 0.9890693176195403===
+===TEST Error Rate of Fold 4: 0.07949029126213593===
+===TEST True Positive Rate of Fold 4: 0.891269199676637===
+===TEST True Negative Rate of Fold 4: 0.9497975708502024===
+2346.0	124.0	
+269.0	2205.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 3, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 5: 0.022473930240920533===
+===TRAIN True Positive Rate of Fold 5: 0.9645183022681338===
+===TRAIN True Negative Rate of Fold 5: 0.9905537312761459===
+===TEST Error Rate of Fold 5: 0.08070388349514564===
+===TEST True Positive Rate of Fold 5: 0.8799514955537591===
+===TEST True Negative Rate of Fold 5: 0.9587044534412955===
+2368.0	102.0	
+297.0	2177.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 3, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 6: 0.022159295217547646===
+===TRAIN True Positive Rate of Fold 6: 0.9660902762182798===
+===TRAIN True Negative Rate of Fold 6: 0.9896091044037605===
+===TEST Error Rate of Fold 6: 0.07766990291262135===
+===TEST True Positive Rate of Fold 6: 0.8932902182700081===
+===TEST True Negative Rate of Fold 6: 0.951417004048583===
+2350.0	120.0	
+264.0	2210.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 3, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 7: 0.021822186263933837===
+===TRAIN True Positive Rate of Fold 7: 0.9672580282955311===
+===TRAIN True Negative Rate of Fold 7: 0.9891142998515586===
+===TEST Error Rate of Fold 7: 0.08232200647249191===
+===TEST True Positive Rate of Fold 7: 0.8860145513338723===
+===TEST True Negative Rate of Fold 7: 0.9493927125506073===
+2345.0	125.0	
+282.0	2192.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 3, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 8: 0.022945882775979864===
+===TRAIN True Positive Rate of Fold 8: 0.9637547720637772===
+===TRAIN True Negative Rate of Fold 8: 0.9903738023480725===
+===TEST Error Rate of Fold 8: 0.07726537216828479===
+===TEST True Positive Rate of Fold 8: 0.8904607922392886===
+===TEST True Negative Rate of Fold 8: 0.9550607287449393===
+2359.0	111.0	
+271.0	2203.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 3, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 9: 0.022181769147788567===
+===TRAIN True Positive Rate of Fold 9: 0.9666292387154727===
+===TRAIN True Negative Rate of Fold 9: 0.9890243353875219===
+===TEST Error Rate of Fold 9: 0.08535598705501618===
+===TEST True Positive Rate of Fold 9: 0.8827809215844786===
+===TEST True Negative Rate of Fold 9: 0.9465587044534413===
+2338.0	132.0	
+290.0	2184.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.lazy.IBk, --, -K, 3, -W, 0, -A, weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last", , , , , ]
+===TRAIN Error Rate of Fold 10: 0.022721143473570658===
+===TRAIN True Positive Rate of Fold 10: 0.9649225241410285===
+===TRAIN True Negative Rate of Fold 10: 0.9896540866357789===
+===TEST Error Rate of Fold 10: 0.0825242718446602===
+===TEST True Positive Rate of Fold 10: 0.883589329021827===
+===TEST True Negative Rate of Fold 10: 0.951417004048583===
+2350.0	120.0	
+288.0	2186.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 0.022316612729234093TRAIN TPR: 0.9656682398105556TRAIN TNR: 0.9897170158273312TEST error rate: 0.07969255663430419TEST TPR: 0.887990671115468TEST TNR: 0.952673867060329*******************AVERAGE RESULTS*******************
+=====Adaboost itreation = 15, KNN [-K 1] =====
+[-I, 15, -W, weka.classifiers.lazy.IBk, --, -K, 1]

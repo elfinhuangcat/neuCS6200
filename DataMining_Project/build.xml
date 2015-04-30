@@ -56,7 +56,7 @@
       <arg line="../purchases4.txt"/>
     </java>
   </target>
-
-  <target name="all" depends="run"/>
   -->
+  <target name="all" depends="jar"/>
+  
 </project>

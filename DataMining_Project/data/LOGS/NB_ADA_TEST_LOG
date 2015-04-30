@@ -1,0 +1,282 @@
+=====Adaboost itreation = 10, NaiveBayes [-D] =====
+[-I, 10, -W, weka.classifiers.bayes.NaiveBayes, --, -D]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 1: 0.15614886731391586===
+===TRAIN True Positive Rate of Fold 1: 0.8161532207064776===
+===TRAIN True Negative Rate of Fold 1: 0.8712765005814473===
+===TEST Error Rate of Fold 1: 0.15857605177993528===
+===TEST True Positive Rate of Fold 1: 0.8186991869918699===
+===TEST True Negative Rate of Fold 1: 0.8639291465378421===
+2146.0	338.0	
+446.0	2014.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 2: 0.15985706580366774===
+===TRAIN True Positive Rate of Fold 2: 0.8004336435088987===
+===TRAIN True Negative Rate of Fold 2: 0.8794614902943018===
+===TEST Error Rate of Fold 2: 0.158373786407767===
+===TEST True Positive Rate of Fold 2: 0.8121951219512196===
+===TEST True Negative Rate of Fold 2: 0.8707729468599034===
+2163.0	321.0	
+462.0	1998.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 3: 0.15841873426824882===
+===TRAIN True Positive Rate of Fold 3: 0.8014274098834583===
+===TRAIN True Negative Rate of Fold 3: 0.8813400125234815===
+===TEST Error Rate of Fold 3: 0.16747572815533981===
+===TEST True Positive Rate of Fold 3: 0.7808943089430894===
+===TEST True Negative Rate of Fold 3: 0.8836553945249598===
+2195.0	289.0	
+539.0	1921.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 4: 0.15605897159295218===
+===TRAIN True Positive Rate of Fold 4: 0.8033697714337339===
+===TRAIN True Negative Rate of Fold 4: 0.8841130691475088===
+===TEST Error Rate of Fold 4: 0.16201456310679613===
+===TEST True Positive Rate of Fold 4: 0.7902439024390244===
+===TEST True Negative Rate of Fold 4: 0.8852657004830918===
+2199.0	285.0	
+516.0	1944.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 5: 0.15745235526788925===
+===TRAIN True Positive Rate of Fold 5: 0.8146173999457945===
+===TRAIN True Negative Rate of Fold 5: 0.8702030593076304===
+===TEST Error Rate of Fold 5: 0.154126213592233===
+===TEST True Positive Rate of Fold 5: 0.8215447154471545===
+===TEST True Negative Rate of Fold 5: 0.8699677938808373===
+2161.0	323.0	
+439.0	2021.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 6: 0.15934016540812657===
+===TRAIN True Positive Rate of Fold 6: 0.7935676212846688===
+===TRAIN True Negative Rate of Fold 6: 0.8872886662492173===
+===TEST Error Rate of Fold 6: 0.15351941747572814===
+===TEST True Positive Rate of Fold 6: 0.7930894308943089===
+===TEST True Negative Rate of Fold 6: 0.8993558776167472===
+2234.0	250.0	
+509.0	1951.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 7: 0.15886821287306724===
+===TRAIN True Positive Rate of Fold 7: 0.8156563375191977===
+===TRAIN True Negative Rate of Fold 7: 0.8663565614097862===
+===TEST Error Rate of Fold 7: 0.16059870550161812===
+===TEST True Positive Rate of Fold 7: 0.8065040650406504===
+===TEST True Negative Rate of Fold 7: 0.8719806763285024===
+2166.0	318.0	
+476.0	1984.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 8: 0.160913340524991===
+===TRAIN True Positive Rate of Fold 8: 0.7885536182130274===
+===TRAIN True Negative Rate of Fold 8: 0.8891224617586546===
+===TEST Error Rate of Fold 8: 0.16444174757281554===
+===TEST True Positive Rate of Fold 8: 0.7890243902439025===
+===TEST True Negative Rate of Fold 8: 0.8816425120772947===
+2190.0	294.0	
+519.0	1941.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 9: 0.15736245954692557===
+===TRAIN True Positive Rate of Fold 9: 0.8117801165364289===
+===TRAIN True Negative Rate of Fold 9: 0.8731940779174308===
+===TEST Error Rate of Fold 9: 0.1660598705501618===
+===TEST True Positive Rate of Fold 9: 0.8064253761691744===
+===TEST True Negative Rate of Fold 9: 0.8611670020120724===
+2140.0	345.0	
+476.0	1983.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 10, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 10: 0.15877831715210355===
+===TRAIN True Positive Rate of Fold 10: 0.813270698766882===
+===TRAIN True Negative Rate of Fold 10: 0.8689001207675449===
+===TEST Error Rate of Fold 10: 0.154126213592233===
+===TEST True Positive Rate of Fold 10: 0.8178121187474583===
+===TEST True Negative Rate of Fold 10: 0.8736418511066398===
+2171.0	314.0	
+448.0	2011.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 0.15831984897518878TRAIN TPR: 0.8058829837798569TRAIN TNR: 0.8771256019957004TEST error rate: 0.1599312297734628TEST TPR: 0.8036432616867852TEST TNR: 0.8761378901427891*******************AVERAGE RESULTS*******************
+=====Adaboost itreation = 15, NaiveBayes [-D] =====
+[-I, 15, -W, weka.classifiers.bayes.NaiveBayes, --, -D]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 1: 0.15911542610571736===
+===TRAIN True Positive Rate of Fold 1: 0.8179624664879357===
+===TRAIN True Negative Rate of Fold 1: 0.8640803038524145===
+===TEST Error Rate of Fold 1: 0.16322815533980584===
+===TEST True Positive Rate of Fold 1: 0.8218737434660234===
+===TEST True Negative Rate of Fold 1: 0.8518518518518519===
+2093.0	364.0	
+443.0	2044.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 2: 0.16295846817691478===
+===TRAIN True Positive Rate of Fold 2: 0.8152815013404826===
+===TRAIN True Negative Rate of Fold 2: 0.8590613130765057===
+===TEST Error Rate of Fold 2: 0.16707119741100324===
+===TEST True Positive Rate of Fold 2: 0.8110172899075191===
+===TEST True Negative Rate of Fold 2: 0.8551078551078551===
+2101.0	356.0	
+470.0	2017.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 3: 0.15999190938511326===
+===TRAIN True Positive Rate of Fold 3: 0.8083556747095622===
+===TRAIN True Negative Rate of Fold 3: 0.8720383432808826===
+===TEST Error Rate of Fold 3: 0.16181229773462782===
+===TEST True Positive Rate of Fold 3: 0.8053880176919984===
+===TEST True Negative Rate of Fold 3: 0.8713878713878714===
+2141.0	316.0	
+484.0	2003.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 4: 0.15976717008270405===
+===TRAIN True Positive Rate of Fold 4: 0.8178731009830206===
+===TRAIN True Negative Rate of Fold 4: 0.8628594682582745===
+===TEST Error Rate of Fold 4: 0.16464401294498382===
+===TEST True Positive Rate of Fold 4: 0.8053880176919984===
+===TEST True Negative Rate of Fold 4: 0.8656898656898657===
+2127.0	330.0	
+484.0	2003.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 5: 0.15996943545487236===
+===TRAIN True Positive Rate of Fold 5: 0.8131367292225201===
+===TRAIN True Negative Rate of Fold 5: 0.8672454331705552===
+===TEST Error Rate of Fold 5: 0.15776699029126215===
+===TEST True Positive Rate of Fold 5: 0.8110172899075191===
+===TEST True Negative Rate of Fold 5: 0.8738298738298739===
+2147.0	310.0	
+470.0	2017.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 6: 0.16082344480402733===
+===TRAIN True Positive Rate of Fold 6: 0.8133154602323504===
+===TRAIN True Negative Rate of Fold 6: 0.8653463555796709===
+===TEST Error Rate of Fold 6: 0.1543284789644013===
+===TEST True Positive Rate of Fold 6: 0.8162444712505026===
+===TEST True Negative Rate of Fold 6: 0.8754578754578755===
+2151.0	306.0	
+457.0	2030.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 7: 0.1590480043149946===
+===TRAIN True Positive Rate of Fold 7: 0.8122877569258267===
+===TRAIN True Negative Rate of Fold 7: 0.869958401157533===
+===TEST Error Rate of Fold 7: 0.15088996763754045===
+===TEST True Positive Rate of Fold 7: 0.8279051065540812===
+===TEST True Negative Rate of Fold 7: 0.8705738705738706===
+2139.0	318.0	
+428.0	2059.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 8: 0.16077849694354548===
+===TRAIN True Positive Rate of Fold 8: 0.8156025199946383===
+===TRAIN True Negative Rate of Fold 8: 0.863124576079584===
+===TEST Error Rate of Fold 8: 0.16039644012944984===
+===TEST True Positive Rate of Fold 8: 0.8201930812550282===
+===TEST True Negative Rate of Fold 8: 0.8592351505288853===
+2112.0	346.0	
+447.0	2039.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 9: 0.1591603739661992===
+===TRAIN True Positive Rate of Fold 9: 0.8149769894106609===
+===TRAIN True Negative Rate of Fold 9: 0.8670133393624236===
+===TEST Error Rate of Fold 9: 0.16444174757281554===
+===TEST True Positive Rate of Fold 9: 0.8085277554304103===
+===TEST True Negative Rate of Fold 9: 0.8628966639544345===
+2121.0	337.0	
+476.0	2010.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 15, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 10: 0.15940758719884934===
+===TRAIN True Positive Rate of Fold 10: 0.8105089138108217===
+===TRAIN True Negative Rate of Fold 10: 0.8710377571783857===
+===TEST Error Rate of Fold 10: 0.16949838187702265===
+===TEST True Positive Rate of Fold 10: 0.7988736926790024===
+===TEST True Negative Rate of Fold 10: 0.8624898291293734===
+2120.0	338.0	
+500.0	1986.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 0.16010203164329379TRAIN TPR: 0.8139301113117818TRAIN TNR: 0.8661765290996228TEST error rate: 0.16140776699029125TEST TPR: 0.8126428465834084TEST TNR: 0.8648520707511759*******************AVERAGE RESULTS*******************
+=====Adaboost itreation = 20, NaiveBayes [-D] =====
+[-I, 20, -W, weka.classifiers.bayes.NaiveBayes, --, -D]
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 1: 0.15704782452355268===
+===TRAIN True Positive Rate of Fold 1: 0.8109046631189681===
+===TRAIN True Negative Rate of Fold 1: 0.8747872054475405===
+===TEST Error Rate of Fold 1: 0.1634304207119741===
+===TEST True Positive Rate of Fold 1: 0.8007305194805194===
+===TEST True Negative Rate of Fold 1: 0.8721774193548387===
+2163.0	317.0	
+491.0	1973.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 2: 0.1572051420352391===
+===TRAIN True Positive Rate of Fold 2: 0.8068458555064489===
+===TRAIN True Negative Rate of Fold 2: 0.8785055102589374===
+===TEST Error Rate of Fold 2: 0.1531148867313916===
+===TEST True Positive Rate of Fold 2: 0.8116883116883117===
+===TEST True Negative Rate of Fold 2: 0.8818548387096774===
+2187.0	293.0	
+464.0	2000.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 3: 0.16019417475728157===
+===TRAIN True Positive Rate of Fold 3: 0.8012988184360061===
+===TRAIN True Negative Rate of Fold 3: 0.8780575217274438===
+===TEST Error Rate of Fold 3: 0.1622168284789644===
+===TEST True Positive Rate of Fold 3: 0.7950487012987013===
+===TEST True Negative Rate of Fold 3: 0.880241935483871===
+2183.0	297.0	
+505.0	1959.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 4: 0.15666576770945703===
+===TRAIN True Positive Rate of Fold 4: 0.8164066023270496===
+===TRAIN True Negative Rate of Fold 4: 0.8700833258668578===
+===TEST Error Rate of Fold 4: 0.1688915857605178===
+===TEST True Positive Rate of Fold 4: 0.797077922077922===
+===TEST True Negative Rate of Fold 4: 0.8649193548387096===
+2145.0	335.0	
+500.0	1964.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 5: 0.15808162531463502===
+===TRAIN True Positive Rate of Fold 5: 0.8076576170289528===
+===TRAIN True Negative Rate of Fold 5: 0.8759519756294238===
+===TEST Error Rate of Fold 5: 0.15635113268608414===
+===TEST True Positive Rate of Fold 5: 0.8120941558441559===
+===TEST True Negative Rate of Fold 5: 0.875===
+2170.0	310.0	
+463.0	2001.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 6: 0.15803667745415317===
+===TRAIN True Positive Rate of Fold 6: 0.8041399837647696===
+===TRAIN True Negative Rate of Fold 6: 0.8795358838813726===
+===TEST Error Rate of Fold 6: 0.15655339805825244===
+===TEST True Positive Rate of Fold 6: 0.8112824675324676===
+===TEST True Negative Rate of Fold 6: 0.8754032258064516===
+2171.0	309.0	
+465.0	1999.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 7: 0.1572950377562028===
+===TRAIN True Positive Rate of Fold 7: 0.8145124921078741===
+===TRAIN True Negative Rate of Fold 7: 0.8707105098109489===
+===TEST Error Rate of Fold 7: 0.1553398058252427===
+===TEST True Positive Rate of Fold 7: 0.8267045454545454===
+===TEST True Negative Rate of Fold 7: 0.8625===
+2139.0	341.0	
+427.0	2037.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 8: 0.15462064005753326===
+===TRAIN True Positive Rate of Fold 8: 0.8068007576440877===
+===TRAIN True Negative Rate of Fold 8: 0.883702177224263===
+===TEST Error Rate of Fold 8: 0.1634304207119741===
+===TEST True Positive Rate of Fold 8: 0.7954545454545454===
+===TEST True Negative Rate of Fold 8: 0.8774193548387097===
+2176.0	304.0	
+504.0	1960.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 9: 0.15826141675656238===
+===TRAIN True Positive Rate of Fold 9: 0.8182187147688839===
+===TRAIN True Negative Rate of Fold 9: 0.8651046100085121===
+===TEST Error Rate of Fold 9: 0.16161003236245955===
+===TEST True Positive Rate of Fold 9: 0.8055217214778725===
+===TEST True Negative Rate of Fold 9: 0.8710197501007658===
+2161.0	320.0	
+479.0	1984.0	
+INFO - Current setting for Adaboost: [-P, 100, -S, 1, -I, 20, -W, weka.classifiers.bayes.NaiveBayes, --, -D, , ]
+===TRAIN Error Rate of Fold 10: 0.1563061848256023===
+===TRAIN True Positive Rate of Fold 10: 0.8062232243517474===
+===TRAIN True Negative Rate of Fold 10: 0.8809193136508221===
+===TEST Error Rate of Fold 10: 0.15898058252427186===
+===TEST True Positive Rate of Fold 10: 0.806739748274462===
+===TEST True Negative Rate of Fold 10: 0.8750503829101169===
+2171.0	310.0	
+476.0	1987.0	
+*******************AVERAGE RESULTS*******************
+TRAIN error rate: 0.15737144911902193TRAIN TPR: 0.8093008729054789TRAIN TNR: 0.8757358033506121TEST error rate: 0.15999190938511326TEST TPR: 0.8062342638583504TEST TNR: 0.873558626204314*******************AVERAGE RESULTS*******************
