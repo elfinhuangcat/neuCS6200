@@ -1,0 +1,59 @@
+1. The arguments (seed, keyphrase) are input.
+2. According to the keyphrase, either one is created:
+   (1) CrawlerNoKey  --- seed
+   (2) CrawlerWithKey--- seed, keyphrase
+
+---------------------
+(1) CrawlerNoKey
+    Maintains:
+        * A frontier (curqueue & next queue, BFS)
+        * A result list (storing all links crawled)
+    Operations:
+        a) From the seed page, first append the seed to the queue & result list
+        b) Start the recursion(args: curqueue, nextqueue)
+           "curqueue": The queue for CURRENT level, originally with seed
+           "nextqueue": The queue for NEXT level, originally empty
+           Maintains: i = 1
+           while i < 6 and result_list < 1001 items 
+               AND (nextqueue OR curqueue) is NOT empty
+               Deque one element from curqueue;
+               Append this element to result_list;
+               Discover all valid links and append them to nextqueue,
+                   (check no more than 1000, no redundant);
+               if curqueue is empty:
+                   move all content to curqueue
+                   i++
+        c) Return the result list.
+
+(2) CrawlerWithKey
+    Maintains:
+        * A frontier (curqueue & next queue, BFS)
+        * A result list (storing all links crawled)
+    Operations:
+        a) From the seed page, first append the seed to the queue & result list
+        b) Start the recursion(args: curqueue, nextqueue)
+           "curqueue": The queue for CURRENT level, originally with seed
+           "nextqueue": The queue for NEXT level, originally empty
+           Maintains: i = 1
+           while i < 6 and result_list < 1001 items 
+               AND (nextqueue OR curqueue) is NOT empty
+               Deque one element from curqueue;
+               if i == 1: Just add the seed page to result_list;
+               else:
+                   if this page contains key phrase:
+                       Append this element to result_list;
+                       Discover all valid links and append them to nextqueue,
+                           (check no more than 1000, no redundant);
+               if curqueue is empty:
+                   move all content to curqueue
+                   i++
+        c) Return the result list.     
+----------------------------------------
+MyHTMLParser:
+Maintains: result_list to store links for this page
+1. (with key): See if the <body> has key phrase
+2. See all href:
+   (1) If "#" ignore
+   (2) If ":" ignore
+   (3) If not start with "/" or "https://en.wikipe..." ignore
+   (4) For those who start with a 
