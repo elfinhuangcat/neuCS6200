@@ -35,9 +35,7 @@ class MyCrawler:
             parser.feed(page.read())
             if parser.get_valid(): 
                 self.result_links.append(cur_link)
-                for item in parser.return_result_links():
-                    if item not in self.visited:
-                        self.next_queue.append(item)
+                self.next_queue += parser.return_result_links()
             if len(self.cur_queue) == 0:
                 self.cur_queue = self.next_queue
                 self.next_queue = deque([])
