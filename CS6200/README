@@ -1,9 +1,0 @@
-How to run the crawler:
-1. On the CCIS Linux machine, open the Terminal and cd to current directory.
-2. Enter the following command:
-       $ python crawler.py
-   Then the program should be run in python 2.7 environment and the result of 
-   unique URLs crawled without/with the key phrase should be output to two files
-   "no_key_result" and "with_key_result".
-
-Author: Yaxin Huang  |  huang.yax@husky.neu.edu

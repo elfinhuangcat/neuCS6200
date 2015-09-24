@@ -21,14 +21,18 @@ The result I got with key phrase "concordance" is much smaller than my fellows (
     Ratio of pages containing "concordance": 0.01863897923442582
 
 The reasons for this difference might be:
-1. My program only looks for the key phrase within the <body>...</body>. That
+1. *IMPORTANT* At the last minute before deadline I found that my program only 
+   looks for the key phrase within the "data" (i.e. element not inside any tag). 
+   A very comman case is the phrase only appears in URLs, but the program still
+   considers the page to be invalid because the URL is not in the "data".
+2. My program only looks for the key phrase within the <body>...</body>. That
    is to say, it tries to look for the phrase within the page which user can see.
    Thus, it will miss a URL if the phrase only appears in metadata.
-2. The program assumes there is no URLs like "//en.wikipedia.org/wiki ...", 
+3. The program assumes there is no URLs like "//en.wikipedia.org/wiki ...", 
    because from my inspection all these links will be written like "/wiki/...", 
    but maybe there will be exceptions. 
-3. My program only looks URLs in the <a> tag.
-4. My program will filter out those wikipedia URLs with "&action=edit", because 
+4. My program only looks URLs in the <a> tag.
+5. My program will filter out those wikipedia URLs with "&action=edit", because 
    such URLs will direct to the edit page, which is meaningleass.
 
 Author: Yaxin Huang  |  huang.yax@husky.neu.edu

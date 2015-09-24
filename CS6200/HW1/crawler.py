@@ -51,8 +51,8 @@ class MyCrawler:
                 self.cur_lv += 1
             
             time_end = time.time()
-            #if time_end - time_start < 1:
-            #    time.sleep(1 - (time_end - time_start)) # be polite
+            if time_end - time_start < 1:
+                time.sleep(1 - (time_end - time_start)) # be polite
         if len(self.result_links) > self.MAXLINKS:
             self.result_links = self.result_links[:self.MAXLINKS]
     def output_result(self):
