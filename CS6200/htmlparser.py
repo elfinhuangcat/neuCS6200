@@ -1,8 +1,5 @@
 #! /usr/bin/python2
 from HTMLParser import HTMLParser
-import urllib
-
-
 
 class MyHTMLParser(HTMLParser):
     def __init__(self, phrase):

@@ -24,23 +24,25 @@ class MyCrawler:
                (len(self.cur_queue) > 0 or len(self.next_queue) > 0)):
             time_start = time.time()
             cur_link = self.cur_queue.popleft()
-            self.visited.add(cur_link)
-            ###DEBUGGG
-            #print("Visited: " + cur_link)
-            page = urllib.urlopen(cur_link)
-            parser = MyHTMLParser(self.KEY)
-            if self.cur_lv == 1:
-                # The seed page is always valid
-                parser.set_valid()
+            if cur_link not in self.visited:
+                self.visited.add(cur_link)
+                ###DEBUGGG
+                print("Visited: " + cur_link)
+                page = urllib.urlopen(cur_link)
+                # page = requests.get(cur_link)
+                parser = MyHTMLParser(self.KEY)
+                if self.cur_lv == 1:
+                    # The seed page is always valid
+                    parser.set_valid()
 
-            parser.feed(page.read())
-            page.close() # IMPORTANT!
+                parser.feed(page.read())
+                page.close() # IMPORTANT!
 
-            if parser.get_valid(): 
-                self.result_links.append(cur_link)
-                for item in parser.return_result_links():
-                    if item not in self.visited:
-                        self.next_queue.append(item)
+                if parser.get_valid(): 
+                    self.result_links.append(cur_link)
+                    for item in parser.return_result_links():
+                        if item not in self.visited:
+                            self.next_queue.append(item)
 
             if len(self.cur_queue) == 0:
                 # Go to next level?
@@ -49,8 +51,8 @@ class MyCrawler:
                 self.cur_lv += 1
             
             time_end = time.time()
-            if time_end - time_start < 1:
-                time.sleep(1 - (time_end - time_start)) # be polite
+            #if time_end - time_start < 1:
+            #    time.sleep(1 - (time_end - time_start)) # be polite
         if len(self.result_links) > self.MAXLINKS:
             self.result_links = self.result_links[:self.MAXLINKS]
     def output_result(self):
