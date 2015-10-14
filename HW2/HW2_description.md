@@ -45,7 +45,7 @@ where the first line indicates that page A is linked from pages D, E, and F, and
 
 ##Instructions
 * Implement the iterative PageRank algorithm as described above. Test your code on the six-node example using the input representation given above. __Be sure that your code handles pages that have no in-links or out-links properly.__ (You may wish to test on a few such examples.) In later parts of this assignment, your task will be easier if you don't require loading the entire link graph into memory.
-Please hand in: a list of the PageRank values you obtain for each of the six vertices after 1, 10, and 100 iterations of the PageRank algorithm.
+    _Please hand in:_ a list of the PageRank values you obtain for each of the six vertices after 1, 10, and 100 iterations of the PageRank algorithm.
 
 * Download the in-links file for the WT2g collection, a 2GB crawl of a subset of the web. This in-links file is in the format described above, with the destination followed by a list of source documents.
     Run your iterative version of PageRank algorithm until your PageRank values "converge". To test for convergence, calculate the perplexity of the PageRank distribution, where perplexity is simply 2 raised to the (Shannon) entropy of the PageRank distribution, i.e., 2H(PR).
@@ -58,7 +58,7 @@ Please hand in: a list of the PageRank values you obtain for each of the six ver
 
     _Please hand in_: a list of the perplexity values you obtain in each round until convergence as described above.
 
-* Sort the collection of web pages by the PageRank values you obtain.
+* Sort the collection of web pages by the PageRank values you obtain.    
     _Please hand in:_
 
     - a list of the document IDs of the top 50 pages as sorted by PageRank, together with their PageRank values;

@@ -45,26 +45,28 @@ where the first line indicates that page A is linked from pages D, E, and F, and
 
 ##Instructions
 * Implement the iterative PageRank algorithm as described above. Test your code on the six-node example using the input representation given above. __Be sure that your code handles pages that have no in-links or out-links properly.__ (You may wish to test on a few such examples.) In later parts of this assignment, your task will be easier if you don't require loading the entire link graph into memory.
-Please hand in: a list of the PageRank values you obtain for each of the six vertices after 1, 10, and 100 iterations of the PageRank algorithm.
+    _Please hand in:_ a list of the PageRank values you obtain for each of the six vertices after 1, 10, and 100 iterations of the PageRank algorithm.
 
 * Download the in-links file for the WT2g collection, a 2GB crawl of a subset of the web. This in-links file is in the format described above, with the destination followed by a list of source documents.
-Run your iterative version of PageRank algorithm until your PageRank values "converge". To test for convergence, calculate the perplexity of the PageRank distribution, where perplexity is simply 2 raised to the (Shannon) entropy of the PageRank distribution, i.e., 2H(PR). Perplexity is a measure of how "skewed" a distribution is: the more "skewed" (i.e., less uniform) a distribution is, the lower its preplexity. Informally, you can think of perplexity as measuring the number of elements that have a "reasonably large" probability weight; technically, the perplexity of a distribution with entropy h is the number of elements n such that a uniform distribution over n elements would also have entropy h. (Hence, both distributions would be equally "unpredictable".)
+    Run your iterative version of PageRank algorithm until your PageRank values "converge". To test for convergence, calculate the perplexity of the PageRank distribution, where perplexity is simply 2 raised to the (Shannon) entropy of the PageRank distribution, i.e., 2H(PR).
+    Perplexity is a measure of how "skewed" a distribution is: the more "skewed" (i.e., less uniform) a distribution is, the lower its preplexity. Informally, you can think of perplexity as measuring the number of elements that have a "reasonably large" probability weight;
+    technically, the perplexity of a distribution with entropy h is the number of elements n such that a uniform distribution over n elements would also have entropy h. (Hence, both distributions would be equally "unpredictable".)
 
-Run your iterative PageRank algorthm, outputting the perplexity of your PageRank distibution until the change in perplexity is less than 1 for at least four consecutive iterations.
+    Run your iterative PageRank algorthm, outputting the perplexity of your PageRank distibution until the change in perplexity is less than 1 for at least four consecutive iterations.
 
-One hint is that in this dataset, the document with the highest in-link count and the highest PageRank is the same, so don't worry that it's a bug.
+    One hint is that in this dataset, the document with the highest in-link count and the highest PageRank is the same, so don't worry that it's a bug.
 
-Please hand in: a list of the perplexity values you obtain in each round until convergence as described above.
+    _Please hand in_: a list of the perplexity values you obtain in each round until convergence as described above.
 
-Sort the collection of web pages by the PageRank values you obtain.
-Please hand in:
+* Sort the collection of web pages by the PageRank values you obtain.
+    _Please hand in:_
 
-a list of the document IDs of the top 50 pages as sorted by PageRank, together with their PageRank values;
-a list of the document IDs of the top 50 pages by in-link count, together with their in-link counts;
-the proportion of pages with no in-links (sources);
-the proportion of pages with no out-links (sinks); and
-the proportion of pages whose PageRank is less than their initial, uniform values.
-Examine the top 10 pages by PageRank and the top 10 by in-link count in the Lemur web interface to the collection by using the "e=docID" option with database "d=0", which is the index of the WT2g collection. For example, the link
+    - a list of the document IDs of the top 50 pages as sorted by PageRank, together with their PageRank values;
+    - a list of the document IDs of the top 50 pages by in-link count, together with their in-link counts;
+    - the proportion of pages with no in-links (sources);
+    - the proportion of pages with no out-links (sinks); and
+    - the proportion of pages whose PageRank is less than their initial, uniform values.
+* Examine the top 10 pages by PageRank and the top 10 by in-link count in the Lemur web interface to the collection by using the "e=docID" option with database "d=0", which is the index of the WT2g collection. For example, the link
 http://fiji4.ccs.neu.edu/~zerg/lemurcgi_IRclass/lemur.cgi?d=0&e=WT04-B22-268 
 or
 http://karachi.ccs.neu.edu/~zerg/lemurcgi_IRclass/lemur.cgi?d=0&e=WT04-B22-268
