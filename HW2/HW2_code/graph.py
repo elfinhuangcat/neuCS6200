@@ -21,7 +21,7 @@ class Graph:
             if arr[0] not in self.in_graph.keys():
                 self.in_graph[arr[0]] = set(arr[1:]) # to avoid duplicate
             else:
-                self.in_graph[arr[0]] = self.in_graph[arr[0]] | set(arr[1:]) #union
+                self.in_graph[arr[0]] = self.in_graph[arr[0]] | set(arr[1:])
         input_graph.close()
 
         # init sink node set, i.e. pages that have no out links
@@ -69,6 +69,15 @@ class Graph:
         self.print_graph(0)
         self.print_graph(1)
         print "Sink node set: " + str(self.sink_node)
+
+    def get_node_num(self):
+        return self.node_num
+    def get_in_graph(self):
+        return self.in_graph
+    def get_out_graph(self):
+        return self.out_graph
+    def get_sink_nodes(self):
+        return self.sink_node
 
 
 if __name__ == '__main__':
