@@ -1,9 +1,54 @@
 #PageRank
 CS6200 Fall2015 Yaxin Huang
+
 ## Where to Find My Solutions
-1. The code for running the question 1 (the six node graph):
-   
+1. The code for running the question 1 (the six-node graph) can be found from: 
+   [HW2_code/pagerank_q1.py](HW2_code/pagerank_q1.py)
+   - All of the pagerank python modules relies on a graph input module, which can be found from: [HW2_code/graph_mod.py](HW2_code/graph_mod.py)
+   - You can find the required graph from: [graphs/six_node_graph](graphs/six_node_graph)
+   - The outputs of the 1, 10, 100 iterations can be found from:
+      * [1 iteration](HW2_code/outputs/q1/q1_1_iteration)
+      * [10 iteration](HW2_code/outputs/q1/q1_10_iteration)
+      * [100 iteration](HW2_code/outputs/q1/q1_100_iteration)
+   - See the next section to learn how to run the code.
+2. The code for running the PageRank till convergence can be found from: 
+   [HW2_code/pagerank_complete.py](HW2_code/pagerank_complete.py)
+   - Please download the WT2G graph on your own and you may put it under the 
+     [graphs](HW2_code/graphs) directory.
+   - The perplexities of each round can be found from: 
+     [perplexity](HW2_code/outputs/q2/perplexity)
+   - The highest 50 pagerank pages can be found from: 
+     [top50_pagerank](HW2_code/outputs/q2/top50_pagerank)
+   - The highest 50 in-links pages can be found from: 
+     [top50_inlink](HW2_code/outputs/q2/top50_inlink)
+   - The proportion of sources, sinks and pages whose Page Rank is less than
+     initial value can be found from: 
+     [info](HW2_code/outputs/q2/info)
+   - See the next section to learn how to run the code.
+3. All outputs can be found under [HW2_code/outputs](HW2_code/outputs)
+
 ## How to Run the Codes
+1. To run the codes for question 1 (six-node graph):
+   - In your Terminal, cd to [HW2_code](HW2_code)
+   - Enter the command:    
+       ```$ python2 pagerank_q1.py```
+   - Enter the path to the graph file as the prompt (for example, graphs/six__node_graph)
+   - The results are printed and output.
+2. To run the codes for all the rest requirements:
+   - In your Terminal, cd to [HW2_code](HW2_code)
+   - Enter the command:    
+       ```$ python2 pagerank_complete.py```
+   - Enter the path to the graph file as the prompt (for example, [graphs/six_node_graph](HW2_code/graphs/six_node_graph))
+   - The change of the last 4 perplexities will be printed. For example:
+     \[100, 480, 960\] means:    
+     |perplexity\[-1\] - perplexity\[-2\]| = 100
+     |perplexity\[-2\] - perplexity\[-3\]| = 480
+     |perplexity\[-3\] - perplexity\[-4\]| = 960
+   - The number of rounds and time elapsed will be printed.
+   - All the required outputs can be found from [outputs/q2](HW2_code/outputs/q2)
+
+## Inspection into Top 50 PageRank and Top 50 In-links Count
+
 
 ## Assignment Description
 In this assignment, you will compute PageRank on a collection of 183,811 web documents. Consider the version of PageRank described in class. PageRank can be computed iteratively as show in the following pseudocode:    

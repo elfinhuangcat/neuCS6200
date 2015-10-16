@@ -165,11 +165,11 @@ def all_below(value_list, below_num):
     return True
 
 if __name__ == '__main__':
-    filepath = raw_input("Please enter the path to the graph file, " + 
-                         "e.g. graphs/graph:")
+    filepath = input("Please enter the path to the graph file, " + 
+                     "e.g. graphs/graph:")
     
     start_time = time.time()
-    pg = PageRank(filepath)
+    pg = PageRank("graphs/wt2g_inlinks.txt")
     pg.page_rank()
     pg.output_all_results()
     print("Iterations: " + str(len(pg.get_perp_hist())))

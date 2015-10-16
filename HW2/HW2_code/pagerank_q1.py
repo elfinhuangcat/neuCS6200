@@ -46,19 +46,21 @@ def output_pagerank_vector(pr_dict, filename):
     log.close()
 
 if __name__ == "__main__":
+    filepath = raw_input("Please enter the path to the graph file, " +
+                         "e.g. graphs/graph : ")
     if not os.path.exists("outputs/q1"):
         os.makedirs("outputs/q1")
     print("1 iteration:")
-    pr_dict = page_rank("graphs/six_node_graph", 1)
+    pr_dict = page_rank(filepath, 1)
     print_pagerank_vector(pr_dict)
     output_pagerank_vector(pr_dict, "q1/q1_1_iteration")
     
     print("\n10 iterations:")
-    pr_dict = page_rank("graphs/six_node_graph", 10)
+    pr_dict = page_rank(filepath, 10)
     print_pagerank_vector(pr_dict)
     output_pagerank_vector(pr_dict, "q1/q1_10_iteration")
     
     print("\n100 iterations:")
-    pr_dict = page_rank("graphs/six_node_graph", 100)
+    pr_dict = page_rank(filepath, 100)
     print_pagerank_vector(pr_dict)
     output_pagerank_vector(pr_dict, "q1/q1_100_iteration")
