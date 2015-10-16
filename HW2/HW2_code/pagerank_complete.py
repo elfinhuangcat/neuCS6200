@@ -106,7 +106,7 @@ class PageRank:
         # proportion of pages with no inlinks:
         no_inlink = 0
         for page in self.graph.get_in_graph():
-            if self.graph.get_in_graph()[page] == 0:
+            if len(self.graph.get_in_graph()[page]) == 0:
                 no_inlink += 1
         
         # proportion of pages with no outlinks:
