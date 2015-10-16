@@ -55,7 +55,7 @@ CS6200 Fall2015 Yaxin Huang
       - It is referred by a large number of less "important" pages.
       - Or the combination of the above.
 
-For example, in the Top 10 PageRank pages, the 1st is a home page of an economist website. This website might contain a lot of important information in this field and a lot of other important/less important websites will refer to it when they are talking about economist.    
+   For example, in the Top 10 PageRank pages, the 1st is a home page of an economist website. This website might contain a lot of important information in this field and a lot of other important/less important websites will refer to it when they are talking about economist.    
 Another example is the 2nd one. This page is a Copy Right of the 1st page and it has high page rank value because many many pages of this website will have a link to it.
 
 2. **Q: Are all of these documents ones that users would likely want to see in response to an appropriate query? Give some examples of ones that are and ones that are not.**    
