@@ -10,8 +10,8 @@ OUTPUT_DIR = "outputs/"
 def page_rank(filepath, iteration):
     graph = Graph(filepath)
     #initial page rank vector:
-    pr_dict = dict.fromkeys(graph.get_in_graph().keys())
-    for key in pr_dict.keys():
+    pr_dict = dict.fromkeys(graph.get_in_graph())
+    for key in pr_dict:
         pr_dict[key] = 1 / float(graph.get_node_num())
     new_pr_dict = copy.copy(pr_dict)
     i = 0
@@ -21,21 +21,20 @@ def page_rank(filepath, iteration):
         sink_pr = 0
         for page in graph.get_sink_nodes():
             sink_pr += pr_dict[page]
-        for p in graph.get_in_graph().keys():
+        for p in graph.get_in_graph():
             new_pr_dict[p] = (1 - D)/graph.get_node_num()
             new_pr_dict[p] += D * sink_pr / graph.get_node_num()
             for q in graph.get_in_graph()[p]:
-                if len(graph.get_out_graph()[q]) > 0:
+                if graph.get_out_count()[q] > 0:
                     new_pr_dict[p] += (D * pr_dict[q] 
-                                       / len(graph.get_out_graph()[q]))
-                    
-        for page in graph.get_in_graph().keys():
+                                       / graph.get_out_count()[q])
+        for page in graph.get_in_graph():
             pr_dict[page] = new_pr_dict[page]
     return pr_dict
     
 def print_pagerank_vector(pr_dict):
     print("Page rank vector:")
-    for page in pr_dict.keys():
+    for page in pr_dict:
         print(str(page) + ": " + str(pr_dict[page]))
     print("Sum of page rank values: " + str(sum(pr_dict.values())))
     
