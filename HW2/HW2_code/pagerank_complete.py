@@ -31,7 +31,7 @@ class PageRank:
         while not self.converge():
             sink_pr = 0
             for page in self.graph.get_sink_nodes():
-                sink_pr += self.pr_dict[key]
+                sink_pr += self.pr_dict[page]
             for p in self.graph.get_in_graph():
                 new_pr_dict[p] = (1 - D) / self.graph.get_node_num()
                 new_pr_dict[p] += D * sink_pr / self.graph.get_node_num()
@@ -53,7 +53,7 @@ class PageRank:
             for i in range(0, PERP_COMPARE-1):
                 diff_list.append(abs(self.perp_hist[-1-i] 
                                      - self.perp_hist[-2-i]))
-            print str(diff_list)
+            print "Perp Change: " + str(diff_list)
             return all_below(diff_list, 1)
     
     def print_pagerank_vector(self):
@@ -86,7 +86,6 @@ if __name__ == '__main__':
     start_time = time.time()
     pg = PageRank("graphs/wt2g_inlinks.txt")
     pg.page_rank()
-    pg.print_pagerank_vector()
     print("Iterations: " + str(len(pg.get_perp_hist())))
     end_time = time.time()
     print("Time in seconds: " + str(end_time - start_time))

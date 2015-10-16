@@ -35,12 +35,9 @@ class Graph:
         self.__init_source_nodes()
         # graph nodes number:
         self.node_num = len(self.in_graph.keys())
-        
+
+    """
     def __init_out_count(self):
-        """
-        Initialize out_count: key is the page P, value is 
-        the number of pages that P points to.
-        """
         missing_pages = set()
         for key in self.in_graph:
             for page in self.in_graph[key]:
@@ -49,6 +46,22 @@ class Graph:
                     missing_pages.add(page)
                     self.out_count[page] = 0
                 self.out_count[page] += 1
+                #print("Finish " + page + " -> " + key)
+            #print("Finish counting: " + key)
+        # Add missing pages to in_graph
+        for page in missing_pages:
+            self.in_graph[page] = set()
+        print "Finish out_count construction"
+    """
+    def __init_out_count(self):
+        missing_pages = set()
+        for key in self.in_graph:
+            for page in self.in_graph[key]:
+                try:
+                    self.out_count[page] += 1
+                except KeyError, e:
+                    missing_pages.add(page)
+                    self.out_count[page] = 1
                 #print("Finish " + page + " -> " + key)
             #print("Finish counting: " + key)
         # Add missing pages to in_graph
@@ -96,6 +109,6 @@ if __name__ == '__main__':
     start_time = time.time()
     #graph = Graph("graphs/six_node_graph")
     graph = Graph("graphs/wt2g_inlinks.txt")
-    graph.print_graph_info()
+    #graph.print_graph_info()
     end_time = time.time()
     print "Elapsed time : " + str(end_time - start_time)
