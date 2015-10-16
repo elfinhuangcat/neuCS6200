@@ -3,6 +3,8 @@ from graph_mod import *
 import copy
 import math
 import time
+import os
+import operator
 D = 0.85 # Damping factor
 PERP_COMPARE = 4 # How many records of perplexity are to be compared
 
@@ -62,6 +64,86 @@ class PageRank:
             print(str(key) + ": " + str(self.pr_dict))
         print("Sum of pagerank values: " 
               + str(sum(self.pr_dict.values())))
+              
+    def output_perplexity(self, filepath):
+        perp_file = open(filepath, 'w')
+        for perp in self.perp_hist:
+            perp_file.write(str(perp) + "\n")
+        perp_file.close()
+        
+    def output_top_50_pagerank(self, filepath):
+        # sort the pages according to page rank
+        sorted_pr = sorted(self.pr_dict.items(), 
+                           key = operator.itemgetter(1), reverse = True)
+        pg_file = open(filepath, 'w')
+        """
+        for pair in sorted_pr:
+             pg_file.write(str(pair[0]) + "\t" + 
+                           str(pair[1]) + "\n")
+        """
+        for i in range(0,50):
+            pg_file.write(str(sorted_pr[i][0]) + "\t" + 
+                          str(sorted_pr[i][1]) + "\n")
+
+        pg_file.close()
+    
+    def output_top_50_inlink(self, filepath):
+        # count inlinks:
+        inlink_dict = dict.fromkeys(self.graph.get_in_graph())
+        for key in self.graph.get_in_graph():
+            inlink_dict[key] = len(self.graph.get_in_graph()[key])
+        sorted_inlink = sorted(inlink_dict.items(), 
+                               key = operator.itemgetter(1), 
+                               reverse = True)
+        del inlink_dict
+        inlink_file = open(filepath, 'w')
+        for i in range(0,50):
+            inlink_file.write(str(sorted_inlink[i][0]) + "\t" +
+                              str(sorted_inlink[i][1]) + "\n")
+        inlink_file.close()
+        
+    def output_info(self, filepath):
+        # proportion of pages with no inlinks:
+        no_inlink = 0
+        for page in self.graph.get_in_graph():
+            if self.graph.get_in_graph()[page] == 0:
+                no_inlink += 1
+        
+        # proportion of pages with no outlinks:
+        no_outlink = 0
+        for page in self.graph.get_out_count():
+            if self.graph.get_out_count()[page] == 0:
+                no_outlink += 1
+        
+        # the proportion of pages whose PageRank is less than 
+        # their initial, uniform values.
+        init_pr = 1 / float(self.graph.get_node_num())
+        less_than_unif = 0
+        for page in self.pr_dict:
+            if self.pr_dict[page] < init_pr:
+                less_than_unif += 1
+        
+        # output:
+        info_file = open(filepath, 'w')
+        node_num = self.graph.get_node_num()
+        info_file.write("Proportion of pages with no in-links: " +
+                        str(float(no_inlink) / node_num) + '\n')
+        info_file.write("Proportion of pages with no out-links: " +
+                        str(float(no_outlink) / node_num) + '\n')
+        info_file.write("The proportion of pages whose PageRank " +
+                        "is less than their initial, uniform " + 
+                        "values: " +
+                        str(float(less_than_unif) / node_num) + '\n')
+        info_file.close()
+
+    def output_all_results(self):
+        outputs_dir = "outputs/q2/"
+        if not os.path.exists(outputs_dir):
+            os.makedirs(outputs_dir)
+        self.output_perplexity(outputs_dir + "perplexity")
+        self.output_top_50_pagerank(outputs_dir + "top50_pagerank")
+        self.output_top_50_inlink(outputs_dir + "top50_inlink")
+        self.output_info(outputs_dir + "info")
             
 ### END OF CLASS PAGERANK
 
@@ -86,6 +168,7 @@ if __name__ == '__main__':
     start_time = time.time()
     pg = PageRank("graphs/wt2g_inlinks.txt")
     pg.page_rank()
+    pg.output_all_results()
     print("Iterations: " + str(len(pg.get_perp_hist())))
     end_time = time.time()
     print("Time in seconds: " + str(end_time - start_time))

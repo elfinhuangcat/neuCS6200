@@ -16,13 +16,18 @@ class Graph:
         input_graph = open(filepath, 'r')
         for line in input_graph:
             arr = line.split(' ')
-            arr[-1] = arr[-1][:-1] # Remove the '\n'
+            if arr[-1] == "\n":
+                arr = arr[:-1]
+            elif '\n' in arr[-1]:
+                arr[-1] = arr[-1][:-1] # Remove the '\n'
+            if len(arr) == 0:
+                continue
             if arr[0] not in self.in_graph:
                 self.in_graph[arr[0]] = set(arr[1:]) # to avoid duplicate
             else:
                 self.in_graph[arr[0]] = self.in_graph[arr[0]] | set(arr[1:])
         input_graph.close()
-        print "Finish in_graph construction."
+        print "INFO - Finish in_graph construction."
 
         # init sink node set, i.e. pages that have no out links
         # init the number of out-links (without duplicates) from page q
@@ -36,23 +41,6 @@ class Graph:
         # graph nodes number:
         self.node_num = len(self.in_graph.keys())
 
-    """
-    def __init_out_count(self):
-        missing_pages = set()
-        for key in self.in_graph:
-            for page in self.in_graph[key]:
-                if page not in self.in_graph.keys():
-                    # record this page and add it to in_graph later
-                    missing_pages.add(page)
-                    self.out_count[page] = 0
-                self.out_count[page] += 1
-                #print("Finish " + page + " -> " + key)
-            #print("Finish counting: " + key)
-        # Add missing pages to in_graph
-        for page in missing_pages:
-            self.in_graph[page] = set()
-        print "Finish out_count construction"
-    """
     def __init_out_count(self):
         missing_pages = set()
         for key in self.in_graph:
@@ -62,12 +50,10 @@ class Graph:
                 except KeyError, e:
                     missing_pages.add(page)
                     self.out_count[page] = 1
-                #print("Finish " + page + " -> " + key)
-            #print("Finish counting: " + key)
         # Add missing pages to in_graph
         for page in missing_pages:
             self.in_graph[page] = set()
-        print "Finish out_count construction"
+        print "INFO - Finish out_count construction"
 
     def __init_sink_nodes(self):
         for key in self.out_count:
@@ -88,10 +74,10 @@ class Graph:
             print
 
     def print_graph_info(self):
-        print "Num of nodes = " + str(self.node_num)
+        print "INFO - Num of nodes = " + str(self.node_num)
         self.print_in_graph()
-        print "Sink node set: " + str(self.sink_node)
-        print "Source node set: " + str(self.source_node)
+        print "INFO - Sink node set: " + str(self.sink_node)
+        print "INFO - Source node set: " + str(self.source_node)
 
     def get_node_num(self):
         return self.node_num
@@ -107,8 +93,8 @@ class Graph:
 
 if __name__ == '__main__':
     start_time = time.time()
-    #graph = Graph("graphs/six_node_graph")
-    graph = Graph("graphs/wt2g_inlinks.txt")
-    #graph.print_graph_info()
+    graph = Graph("graphs/six_node_graph")
+    # graph = Graph("graphs/wt2g_inlinks.txt")
+    graph.print_graph_info()
     end_time = time.time()
-    print "Elapsed time : " + str(end_time - start_time)
+    print "INFO - Elapsed time : " + str(end_time - start_time)

@@ -2,6 +2,7 @@
 
 from graph_mod import *
 import copy
+import os
 
 D = 0.85
 OUTPUT_DIR = "outputs/"
@@ -45,17 +46,19 @@ def output_pagerank_vector(pr_dict, filename):
     log.close()
 
 if __name__ == "__main__":
+    if not os.path.exists("outputs/q1"):
+        os.makedirs("outputs/q1")
     print("1 iteration:")
     pr_dict = page_rank("graphs/six_node_graph", 1)
     print_pagerank_vector(pr_dict)
-    output_pagerank_vector(pr_dict, "q1_1_iteration")
+    output_pagerank_vector(pr_dict, "q1/q1_1_iteration")
     
     print("\n10 iterations:")
     pr_dict = page_rank("graphs/six_node_graph", 10)
     print_pagerank_vector(pr_dict)
-    output_pagerank_vector(pr_dict, "q1_10_iteration")
+    output_pagerank_vector(pr_dict, "q1/q1_10_iteration")
     
     print("\n100 iterations:")
     pr_dict = page_rank("graphs/six_node_graph", 100)
     print_pagerank_vector(pr_dict)
-    output_pagerank_vector(pr_dict, "q1_100_iteration")
+    output_pagerank_vector(pr_dict, "q1/q1_100_iteration")
