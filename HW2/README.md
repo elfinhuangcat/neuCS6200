@@ -60,28 +60,28 @@ Another example is the 2nd one. This page is a Copy Right of the 1st page and it
 
 2. **Q: Are all of these documents ones that users would likely want to see in response to an appropriate query? Give some examples of ones that are and ones that are not.**    
    A: Not all of them are interesting.    
-      Examples for the interesting ones:
-      - WT21-B37-76 (economist home)
-      - WT25-B39-116 (security assurance requirements)
-      - WT24-B40-171 (evening news archive)
-      - WT23-B39-340 (financial reports index)
+   Examples for the interesting ones:
+   - WT21-B37-76 (economist home)
+   - WT25-B39-116 (security assurance requirements)
+   - WT24-B40-171 (evening news archive)
+   - WT23-B39-340 (financial reports index)
 
-      Examples for the not interesting ones:
-      - WT21-B37-75 (copyright)
-      - WT23-B37-134 (disclaimer and copyright)
+   Examples for the not interesting ones:
+   - WT21-B37-75 (copyright)
+   - WT23-B37-134 (disclaimer and copyright)
 
 3. **Q: For those that are not "interesting" documents, why might they have high PageRank values?**    
    A: They might have a large in-links count. Some of them are important pages who delivers high PageRank values and others are less important pages who together contribute a lot to the PageRank value of this uninteresting page. For example, the copyright page is relatively information-less to users but it needs to be quoted at almost every page (even the very "important" home page) of its website. Thus this page has a high in-links count and it might also be referred to by some important pages.
 
 4. **Q: How do the pages with high PageRank compare to the pages with many in-links?**    
    A: Some pages are in both Top 10 lists. For example:    
-      - WT21-B37-76 (economist)
-      - WT21-B37-75 (copyright)
-      - WT08-B18-400 (disclaimer)
+   - WT21-B37-76 (economist)
+   - WT21-B37-75 (copyright)
+   - WT08-B18-400 (disclaimer)
 
-These pages have high PageRank are due to the high in-links count, and probably some incoming links are of high PageRank.     
-And others are not the same. Pages with high PageRank are not necessarily interesting. For example, WT23-B37-134 with disclaimer and copyright information is not most users are looking for. That is why the PageRank algorithm needs to evolve. But the pages with high in-links count are also not necessarily interesting. For example the WT08-B18-400(disclaimer). Thus, only judging on the in-links count to value a page's importance will no work.    
-However I would say that for this particular subnet, from the result I got, the pages in Top 10 in-links count are more interesting than the pages in Top 10 PageRank. 
+   These pages have high PageRank are due to the high in-links count, and probably some incoming links are of high PageRank.     
+   And others are not the same. Pages with high PageRank are not necessarily interesting. For example, WT23-B37-134 with disclaimer and copyright information is not most users are looking for. That is why the PageRank algorithm needs to evolve. But the pages with high in-links count are also not necessarily interesting. For example the WT08-B18-400(disclaimer). Thus, only judging on the in-links count to value a page's importance will no work.    
+   However I would say that for this particular subnet, from the result I got, the pages in Top 10 in-links count are more interesting than the pages in Top 10 PageRank. 
       
 
 ## Assignment Description
