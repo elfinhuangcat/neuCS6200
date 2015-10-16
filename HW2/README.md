@@ -42,9 +42,9 @@ CS6200 Fall2015 Yaxin Huang
    - Enter the path to the graph file as the prompt (for example, [graphs/six_node_graph](HW2_code/graphs/six_node_graph))
    - The change of the last 4 perplexities will be printed. For example:
      \[100, 480, 960\] means:    
-     |perplexity\[-1\] - perplexity\[-2\]| = 100
-     |perplexity\[-2\] - perplexity\[-3\]| = 480
-     |perplexity\[-3\] - perplexity\[-4\]| = 960
+     |perplexity\[-1\] - perplexity\[-2\]| = 100    
+     |perplexity\[-2\] - perplexity\[-3\]| = 480    
+     |perplexity\[-3\] - perplexity\[-4\]| = 960    
    - The number of rounds and time elapsed will be printed.
    - All the required outputs can be found from [outputs/q2](HW2_code/outputs/q2)
 
@@ -53,10 +53,10 @@ CS6200 Fall2015 Yaxin Huang
    A: The PageRank algorithm runs many iterations until the page rank vector become "stable". In each iteration, a page updates its page rank by getting all in-coming linkes' page rank, and the more "important" the page is, the more page rank weigh it will carry. A page becomes more and more important because:    
       - It is referred to by some very "important" pages.
       - It is referred by a large number of less "important" pages.
-      - Or the combination of the above.    
+      - Or the combination of the above.
 
-      For example, in the Top 10 PageRank pages, the 1st is a home page of an economist website. This website might contain a lot of important information in this field and a lot of other important/less important websites will refer to it when they are talking about economist.    
-      Another example is the 2nd one. This page is a Copy Right of the 1st page and it has high page rank value because many many pages of this website will have a link to it.
+For example, in the Top 10 PageRank pages, the 1st is a home page of an economist website. This website might contain a lot of important information in this field and a lot of other important/less important websites will refer to it when they are talking about economist.    
+Another example is the 2nd one. This page is a Copy Right of the 1st page and it has high page rank value because many many pages of this website will have a link to it.
 
 2. **Q: Are all of these documents ones that users would likely want to see in response to an appropriate query? Give some examples of ones that are and ones that are not.**    
    A: Not all of them are interesting.    
@@ -65,8 +65,8 @@ CS6200 Fall2015 Yaxin Huang
       - WT25-B39-116 (security assurance requirements)
       - WT24-B40-171 (evening news archive)
       - WT23-B39-340 (financial reports index)
-   
-      Examples for the not interesting ones:    
+
+      Examples for the not interesting ones:
       - WT21-B37-75 (copyright)
       - WT23-B37-134 (disclaimer and copyright)
 
@@ -79,9 +79,9 @@ CS6200 Fall2015 Yaxin Huang
       - WT21-B37-75 (copyright)
       - WT08-B18-400 (disclaimer)
 
-      These pages have high PageRank are due to the high in-links count, and probably some incoming links are of high PageRank.     
-      And others are not the same. Pages with high PageRank are not necessarily interesting. For example, WT23-B37-134 with disclaimer and copyright information is not most users are looking for. That is why the PageRank algorithm needs to evolve. But the pages with high in-links count are also not necessarily interesting. For example the WT08-B18-400(disclaimer). Thus, only judging on the in-links count to value a page's importance will no work.    
-      However I would say that for this particular subnet, from the result I got, the pages in Top 10 in-links count are more interesting than the pages in Top 10 PageRank. 
+These pages have high PageRank are due to the high in-links count, and probably some incoming links are of high PageRank.     
+And others are not the same. Pages with high PageRank are not necessarily interesting. For example, WT23-B37-134 with disclaimer and copyright information is not most users are looking for. That is why the PageRank algorithm needs to evolve. But the pages with high in-links count are also not necessarily interesting. For example the WT08-B18-400(disclaimer). Thus, only judging on the in-links count to value a page's importance will no work.    
+However I would say that for this particular subnet, from the result I got, the pages in Top 10 in-links count are more interesting than the pages in Top 10 PageRank. 
       
 
 ## Assignment Description
