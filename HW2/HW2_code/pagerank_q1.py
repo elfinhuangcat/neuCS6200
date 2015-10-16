@@ -26,7 +26,8 @@ def page_rank(filepath, iteration):
             new_pr_dict[p] += D * sink_pr / graph.get_node_num()
             for q in graph.get_in_graph()[p]:
                 if len(graph.get_out_graph()[q]) > 0:
-                    new_pr_dict[p] += D * pr_dict[q] / len(graph.get_out_graph()[q])
+                    new_pr_dict[p] += (D * pr_dict[q] 
+                                       / len(graph.get_out_graph()[q]))
                     
         for page in graph.get_in_graph().keys():
             pr_dict[page] = new_pr_dict[page]

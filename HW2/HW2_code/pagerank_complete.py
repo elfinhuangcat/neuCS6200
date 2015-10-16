@@ -1,7 +1,19 @@
 #! /usr/bin/python2
 from graph_mod import *
 import copy
-D = 0.85 # damping factor
+
+class PageRank:
+    D = 0.85 # Damping factor
+    def __init__(self, filepath):
+        self.graph = Graph(filepath)
+        self.pr_dict = dict()
+        
+    def get_graph(self):
+        return self.graph
+    
+    def page_rank(self):
+        
+
 def page_rank(filepath):
     graph = Graph(filepath)
     # initial page rank vector:

@@ -30,6 +30,8 @@ class Graph:
         self.__init_out_graph()
         self.sink_node = set()
         self.__init_sink_nodes()
+        self.source_node = set()
+        self.__init_source_nodes()
         
     def __init_out_graph(self):
         """
@@ -46,6 +48,11 @@ class Graph:
         for key in self.out_graph.keys():
             if len(self.out_graph[key]) == 0:
                 self.sink_node.add(key)
+    
+    def __init_source_nodes(self):
+        for key in self.in_graph.keys():
+            if len(self.in_graph[key]) == 0:
+                self.source_node.add(key)
 
     def print_graph(self,choice):
         """ Choice = 0: print in graph; Choice = 1: print out graph"""
@@ -69,6 +76,7 @@ class Graph:
         self.print_graph(0)
         self.print_graph(1)
         print "Sink node set: " + str(self.sink_node)
+        print "Source node set: " + str(self.source_node)
 
     def get_node_num(self):
         return self.node_num
@@ -78,8 +86,10 @@ class Graph:
         return self.out_graph
     def get_sink_nodes(self):
         return self.sink_node
+    def get_source_nodes(self):
+        return self.source_node
 
 
 if __name__ == '__main__':
-    graph = Graph("graphs/sp_graph")
+    graph = Graph("graphs/six_node_graph")
     graph.print_graph_info()
