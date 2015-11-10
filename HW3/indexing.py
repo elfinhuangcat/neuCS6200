@@ -165,7 +165,8 @@ class InvertIndex():
             self.invert_index[arr[0]] = list()
             i = 2
             while i < len(arr):
-                self.invert_index[arr[0]].append((arr[i-1], arr[i]))
+                self.invert_index[arr[0]].append(
+                    (arr[i-1], int(arr[i])))
                 i += 2
 
 ## MAIN
@@ -176,7 +177,7 @@ if __name__ == '__main__':
     indexer = InvertIndex()
     indexer.start_build_index(sys.argv[1])
     indexer.output_index(sys.argv[2])
-
+    """
     ## before decoding:
     print("num of doc: " + str(indexer.num_of_docs))
     print("length of dls: " + str(len(indexer.dl)))
@@ -192,4 +193,5 @@ if __name__ == '__main__':
     print("num of terms: " + str(len(indexer.invert_index)))
     print("last term details: term - " + indexer.invert_index.keys()[-1])
     print("value: " + str(indexer.invert_index[indexer.invert_index.keys()[-1]]))
+    """
 

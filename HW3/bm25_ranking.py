@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 import os
 import sys
+import math
+import operator
 import indexing
 
 """ output format:
@@ -24,37 +26,119 @@ class BM25():
         self.indexer = indexing.InvertIndex()
         self.indexer.decode_index_file(index_file)
         self.query = Query(query_file)
-        
+        self.AVDL = float(sum(self.indexer.get_dl())) / len(
+            self.indexer.get_dl())
     
     def start_ranking(self):
         index = self.indexer.get_index()
         i = 1 # query ID
         for q_dict in self.query.get_queries():
             # this is the for loop to inspect each query
-            for doc_pair in index[q_dict.keys()[0]]:
-                # this is the for loop to inspect each doc for cur query
-                # i.e. for each doc_pair has the first term in the query
-                # Inspect if this doc has all query terms
-                doc_id = doc_pair[0]
-                tf = {q_dict.keys()[0] : doc_pair[1]}
-                all_flag = True
-                j = 1
-                while all_flag and j < len(q_dict):
-                    # for each other terms in query
-                    for d_p in index[q_dict.keys()[j]]:
-                        # for each doc pair in index for cur term
-                        if d_p[0] == doc_id:
-                            tf[q_dict.keys()[j]] = d_p[1]
-                            j += 1
-                            break
-                    # the inner for loop cannot find the matching doc:
-                    all_flag = False
-                    
-                    
             
+            ## result_list: to store the scores and ranks of documents
+            ## for this query
+            ## Each element is: (doc_id, score)
+            result_list = list()
+            
+            iters = list()
+            for term in q_dict:
+                # store the iterator for each index[term]
+                iters.append(iter(self.indexer.get_index()[term]))
+            doc_pairs = list()
+            for iterator in iters:
+                doc_pairs.append(iterator.next())
+            
+            while True:
+                try:
+                    if self.doc_id_equal_in_pairs(doc_pairs):
+                        # work on bm25 because a doc containing all
+                        # the terms in query is found.
+                        result_list.append((
+                            doc_pairs[0][0],                # doc id
+                            self.bm25(q_dict, doc_pairs)))  # score
+                        # all move forward
+                        doc_pairs = list()
+                        for iterator in iters:
+                            doc_pairs.append(iterator.next())
+                    else:
+                        ind = self.index_of_lowest_id_in_pairs(doc_pairs)
+                        doc_pairs[ind] = iters[ind].next()                        
+                except StopIteration:
+                    break
+            # rank the result_list by score and output the top LIM ones
+            sorted_list = sorted(result_list, 
+                key=operator.itemgetter(1), 
+                reverse = True)
+            sep = '\t'
+            for rank in range (1, self.LIM_OUT + 1):
+                if rank > len(sorted_list):
+                    break
+                print(str(i) + sep + "Q0" + sep +
+                    sorted_list[rank-1][0] +        # doc ID
+                    sep + str(rank) + sep + 
+                    str(sorted_list[rank-1][1]) +   # score
+                    sep + self.SYSTEM_NAME)
+            i += 1 # update query ID
+    
+    def bm25(self, q_dict, doc_pairs):
+        """
+        @param doc_pairs - a list of (doc_id, term frequency)
+                           where the doc_id are same
+        Returns the document score
+        """
+        k = self.K1 * ((1 - self.B) + self.B *
+            float(self.indexer.get_dl()[int(doc_pairs[0][0])-1]) / 
+            self.AVDL)
+        score = 0
+        i = 0 # index of term
+        for term in q_dict:
+            ni = len(self.indexer.get_index()[term])
+            fi = doc_pairs[i][1]
+            qfi = q_dict[term]
+            
+            add_1 = math.log(self.indexer.get_doc_num() - ni + 0.5)
+            add_2 = math.log((self.K1 + 1) * float(fi))
+            add_3 = math.log((self.K2 + 1) * float(qfi))
+            sub_1 = math.log(ni + 0.5)
+            sub_2 = math.log(k + float(fi))
+            sub_3 = math.log(self.K2 + float(qfi))
+
+            score += add_1 + add_2 + add_3 - sub_1 - sub_2 - sub_3
             i += 1
+        return score
+        
     
+    def doc_id_equal_in_pairs(self, doc_pairs):
+        """
+        @param doc_pairs - a list of (doc_id, term frequency)
+        """
+        doc_id = doc_pairs[0][0]
+        for i in range(1, len(doc_pairs)):
+            if doc_id != doc_pairs[i][0]:
+                return False
+        return True
     
+    def index_of_lowest_id_in_pairs(self, doc_pairs):
+        """
+        @param doc_pairs - a list of (doc_id, term frequency)
+        """
+        lowest_id = doc_pairs[0][0]
+        index = 0
+        for i in range(1, len(doc_pairs)):
+            if int(doc_pairs[i][0]) < int(lowest_id):
+                lowest_id = doc_pairs[i][0]
+                index = i
+        return index
+        
+    # methods for debugging:
+    def print_doc_pairs(self, doc_pairs):
+        """
+        @param doc_pairs - a list of (doc_id, term frequency)
+        """
+        print "DOC PAIRS:"
+        for pair in doc_pairs:
+            print "(" + pair[0] + ", " + str(pair[1]) + ") ",
+        print('\n')
         
 class Query():
     def __init__(self, query_file):
@@ -95,8 +179,9 @@ def blank(string):
         
 
 if __name__ == '__main__':
-    #test
-    rank = BM25('test.out','queries.txt','')
-    print rank.indexer.get_doc_num()
-    print rank.query.queries[0]
+    if len(sys.argv) != 4:
+        print("ERROR - you should invoke the bm25 ranker by: ")
+        print("        bm25 index.out queries.txt limit_out")
+    ranker = BM25(sys.argv[1], sys.argv[2], int(sys.argv[3]))
+    ranker.start_ranking()
         

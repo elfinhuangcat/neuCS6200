@@ -1,0 +1,2 @@
+#!/bin/bash
+python bm25_ranking.py $1 $2 $3
