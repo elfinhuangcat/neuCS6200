@@ -35,36 +35,21 @@ class BM25():
         for q_dict in self.query.get_queries():
             # this is the for loop to inspect each query
             
-            ## result_list: to store the scores and ranks of documents
+            ## result_list: to store the scores of documents
             ## for this query
             ## Each element is: (doc_id, score)
             result_list = list()
+            for ctr in range(0, len(self.indexer.get_doc_id())):
+                # init the score as 0
+                result_list.append((self.indexer.get_doc_id()[ctr], 0))
             
-            iters = list()
             for term in q_dict:
-                # store the iterator for each index[term]
-                iters.append(iter(self.indexer.get_index()[term]))
-            doc_pairs = list()
-            for iterator in iters:
-                doc_pairs.append(iterator.next())
-            
-            while True:
-                try:
-                    if self.doc_id_equal_in_pairs(doc_pairs):
-                        # work on bm25 because a doc containing all
-                        # the terms in query is found.
-                        result_list.append((
-                            doc_pairs[0][0],                # doc id
-                            self.bm25(q_dict, doc_pairs)))  # score
-                        # all move forward
-                        doc_pairs = list()
-                        for iterator in iters:
-                            doc_pairs.append(iterator.next())
-                    else:
-                        ind = self.index_of_lowest_id_in_pairs(doc_pairs)
-                        doc_pairs[ind] = iters[ind].next()                        
-                except StopIteration:
-                    break
+                for doc_pair in self.indexer.get_index()[term]:
+                    score_part = self.bm25(q_dict, doc_pair, term)
+                    result_list[int(doc_pair[0])-1] = (
+                        doc_pair[0],
+                        result_list[int(doc_pair[0])-1][1] + score_part)
+                    
             # rank the result_list by score and output the top LIM ones
             sorted_list = sorted(result_list, 
                 key=operator.itemgetter(1), 
@@ -80,33 +65,26 @@ class BM25():
                     sep + self.SYSTEM_NAME)
             i += 1 # update query ID
     
-    def bm25(self, q_dict, doc_pairs):
+    def bm25(self, q_dict, doc_pair, term):
         """
-        @param doc_pairs - a list of (doc_id, term frequency)
-                           where the doc_id are same
-        Returns the document score
+        @param q_dict - {term : qf}
+        @param doc_pair - (doc_id, f)
+        @param term
+        Returns the document score (part)
         """
         k = self.K1 * ((1 - self.B) + self.B *
-            float(self.indexer.get_dl()[int(doc_pairs[0][0])-1]) / 
+            float(self.indexer.get_dl()[int(doc_pair[0])-1]) / 
             self.AVDL)
-        score = 0
-        i = 0 # index of term
-        for term in q_dict:
-            ni = len(self.indexer.get_index()[term])
-            fi = doc_pairs[i][1]
-            qfi = q_dict[term]
-            
-            add_1 = math.log(self.indexer.get_doc_num() - ni + 0.5)
-            add_2 = math.log((self.K1 + 1) * float(fi))
-            add_3 = math.log((self.K2 + 1) * float(qfi))
-            sub_1 = math.log(ni + 0.5)
-            sub_2 = math.log(k + float(fi))
-            sub_3 = math.log(self.K2 + float(qfi))
-
-            score += add_1 + add_2 + add_3 - sub_1 - sub_2 - sub_3
-            i += 1
-        return score
+        ni = len(self.indexer.get_index()[term])
+        fi = doc_pair[1]
+        qfi = q_dict[term]
         
+        term_1 = math.log((self.indexer.get_doc_num() - ni + 0.5) /
+            (ni + 0.5))
+        term_2 = float(self.K1 + 1) * fi / (k + fi)
+        term_3 = float(self.K2 + 1) * qfi / (self.K2 + qfi)
+
+        return (term_1 * term_2 * term_3)        
     
     def doc_id_equal_in_pairs(self, doc_pairs):
         """
