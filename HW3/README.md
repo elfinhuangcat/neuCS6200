@@ -3,12 +3,12 @@ _Author: Yaxin Huang huang.yax@husky.neu.edu_ [wiki for BM25 algorithm](https://
 
 ### How to Run the Code
 1. In your CCIS Linux machine, open the Terminal and cd to this directory (the dir containing this README file)
-2. In order to enable the shell scripts to run, enter the following commands:
+2. In order to enable the shell scripts to run, enter the following commands:    
     ```
     chmod 755 indexer
     chmod 755 bm25
     ```
-3. Build the index by using the command in following format:
+3. Build the index by using the command in following format:    
     ```
     ./indexer [input_file_path] [index_output_path]
     ```
@@ -17,7 +17,7 @@ _Author: Yaxin Huang huang.yax@husky.neu.edu_ [wiki for BM25 algorithm](https://
     ```
     ./indexer tccorpus.txt index.out
     ```
-4. To start ranking the documents with queries stored in a file, use the command in following format:
+4. To start ranking the documents with queries stored in a file, use the command in following format:    
     ```
     ./bm25 [index_output_path] [query_file_path] [limit_of_docs_per_query] > [result_output_path]
     ```
@@ -27,7 +27,7 @@ _Author: Yaxin Huang huang.yax@husky.neu.edu_ [wiki for BM25 algorithm](https://
     ./bm25 index.out queries.txt 100 > results.eval
     ```
     will output the result to the ```results.eval``` in this repo.
-5. The result file consists of lines like: 
+5. The result file consists of lines like:    
     ```
     query_id Q0 doc_id rank BM25_score bm25_rank_system
     ```
