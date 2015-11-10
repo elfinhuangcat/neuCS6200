@@ -1,2 +1,6 @@
 #!/bin/bash
+if [ "$#" -ne 2 ] ; then
+  echo "Usage: ./indexer tccorpus.txt index.out" >&2
+  exit 1
+fi
 python indexing.py $1 $2

@@ -160,6 +160,11 @@ if __name__ == '__main__':
     if len(sys.argv) != 4:
         print("ERROR - you should invoke the bm25 ranker by: ")
         print("        bm25 index.out queries.txt limit_out")
+        sys.exit(1)
+    if int(sys.argv[3]) <= 0:
+        print("ERROR - document results per query limit should " +
+            "larger than 0")
+        sys.exit(1)
     ranker = BM25(sys.argv[1], sys.argv[2], int(sys.argv[3]))
     ranker.start_ranking()
         

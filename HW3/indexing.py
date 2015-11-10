@@ -34,7 +34,7 @@ class InvertIndex():
         """
         if not os.path.isfile(input_file_path):
             print("ERROR - input file not exist.")
-            exit(1)
+            sys.exit(1)
         collection = open(input_file_path)
         cur_id = None
         temp_fq_dict = None # to store the terms dict for a doc
@@ -106,7 +106,7 @@ class InvertIndex():
         """
         if not os.path.isfile(index_file):
             print("ERROR - input file not exist.")
-            exit(1)
+            sys.exit(1)
         index_f = open(index_file, 'r')
         # read the total number of docs:
         self.num_of_docs = int(index_f.readline())
@@ -174,6 +174,7 @@ if __name__ == '__main__':
     if len(sys.argv) != 3:
         print("ERROR - you should invoke the indexer by: ")
         print("        indexer input-file output-file")
+        sys.exit(1)
     indexer = InvertIndex()
     indexer.start_build_index(sys.argv[1])
     indexer.output_index(sys.argv[2])
