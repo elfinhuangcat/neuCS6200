@@ -46,6 +46,7 @@ _Author: Yaxin Huang huang.yax@husky.neu.edu_ [wiki for BM25 algorithm](https://
 
 ### Implementation Description
 There are two major classes that provides data structure and methods to solve the problem:    
+
 1. **class InvertIndex**:
     ```python
     class InvertIndex():
