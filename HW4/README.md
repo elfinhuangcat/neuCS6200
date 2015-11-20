@@ -7,7 +7,7 @@ _Yaxin Huang_
    ```
    $ java -jar HW4.jar arg0 arg1 arg2
    ```
-   where:
+   where:    
    |Argument | Explanation |
    |:---------:|:---------------------------------------------------------------------------------|
    |**arg0** | full path of the index directory (if it does not exist, the program will create one)|
