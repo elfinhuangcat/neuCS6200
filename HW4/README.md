@@ -8,12 +8,9 @@ _Yaxin Huang_
    $ java -jar HW4.jar arg0 arg1 arg2
    ```
    where:    
-
-| Argument | Explanation |
-|:---------:|:--------------------------------------------------------------------------------:|
-| **arg0**  | full path of the index directory (if it does not exist, the program will create one) |
-| **arg1**  | full path to the CACM document directory, OR **-i**, which represents that no files need to be added to the index |
-| **arg2**  | full path to the query file |
+  * **arg0** full path of the index directory (if it does not exist, the program will create one)
+  * **arg1** full path to the CACM document directory, OR **-i**, which represents that no files need to be added to the index
+  * **arg2** full path to the query file
 
    For example, the command can be:
    ```
