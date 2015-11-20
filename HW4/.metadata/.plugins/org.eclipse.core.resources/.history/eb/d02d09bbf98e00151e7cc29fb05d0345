@@ -1,0 +1,6 @@
+import org.apache.lucene.index.Term;
+
+class TFList {
+	private Term term;
+	private long freq;
+}

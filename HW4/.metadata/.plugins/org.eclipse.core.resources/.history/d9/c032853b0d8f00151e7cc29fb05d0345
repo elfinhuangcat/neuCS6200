@@ -1,0 +1,40 @@
+import java.util.LinkedList;
+
+import org.apache.lucene.index.Term;
+
+public class TFList {
+	private LinkedList<TF> list;
+	public LinkedList<TF> getList() {
+		return list;
+	}
+	public void sortListByFreqDesc() {
+		
+	}
+	public void addElementToEnd(TF tf) {
+		list.add(tf);
+	}
+}
+
+class TF implements Comparable<TF> {
+	private Term term;
+	private long freq;
+	
+	public TF(Term t, long f) {
+		this.term = t;
+		this.freq = f;
+	}
+	
+	public Term getTerm() {
+		return term;
+	}
+	public long getFreq() {
+		return freq;
+	}
+	
+	public void setTerm(Term term) {
+		this.term = term;
+	}
+	public void setFreq(long freq) {
+		this.freq = freq;
+	}
+}

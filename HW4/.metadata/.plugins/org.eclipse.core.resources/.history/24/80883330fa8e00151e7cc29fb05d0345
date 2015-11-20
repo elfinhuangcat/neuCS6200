@@ -1,0 +1,33 @@
+import java.util.LinkedList;
+
+import org.apache.lucene.index.Term;
+
+public class TFList {
+	private LinkedList<TF> list;
+	public LinkedList<TF> getList() {
+		return list;
+	}
+	public void sortListByFreqDesc() {
+		
+	}
+	public void addElementToEnd(TF tf) {
+		
+	}
+}
+
+class TF {
+	private Term term;
+	private long freq;
+	
+	public TF(Term t, long f) {
+		this.term = t;
+		this.freq = f;
+	}
+	
+	public Term getTerm() {
+		return term;
+	}
+	public long getFreq() {
+		return freq;
+	}
+}

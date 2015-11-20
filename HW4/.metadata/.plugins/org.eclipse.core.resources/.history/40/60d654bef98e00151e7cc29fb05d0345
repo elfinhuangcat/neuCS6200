@@ -1,0 +1,10 @@
+import org.apache.lucene.index.Term;
+
+public class TFList {
+	private LinkedList<TF> list;
+}
+
+class TF {
+	private Term term;
+	private long freq;
+}

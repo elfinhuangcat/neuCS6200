@@ -1,0 +1,54 @@
+import java.util.Collections;
+import java.util.LinkedList;
+
+public class TFList {
+	private LinkedList<TF> list;
+	
+	public TFList() {
+		this.list = new LinkedList<TF>();
+	}
+	public LinkedList<TF> getList() {
+		return list;
+	}
+	public void addElementToEnd(TF tf) {
+		list.add(tf);
+	}
+	public void sortList() {
+		Collections.sort(this.list);
+	}
+}
+
+class TF implements Comparable<TF> {
+	private String term;
+	private long freq;
+	
+	public TF() {
+		this.term = null;
+		this.freq = -1;
+	}
+	
+	public TF(String t, long f) {
+		this.term = t;
+		this.freq = f;
+	}
+	
+	public String getTerm() {
+		return term;
+	}
+	public long getFreq() {
+		return freq;
+	}
+	
+	public void setTerm(String term) {
+		this.term = term;
+	}
+	public void setFreq(long freq) {
+		this.freq = freq;
+	}
+
+	@Override
+	public int compareTo(TF other) {
+		// Sort as descending order
+		return (- Long.compare(this.freq, other.freq));
+	}
+}
