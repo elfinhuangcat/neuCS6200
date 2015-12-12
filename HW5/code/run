@@ -1,0 +1,5 @@
+#!/bin/bash
+python transform_hw3.py results.eval
+python statistics.py outputs/q1_hw3_result.eval 1 cacm.rel 12
+python statistics.py outputs/q2_hw3_result.eval 2 cacm.rel 13
+python statistics.py outputs/q3_hw3_result.eval 3 cacm.rel 19

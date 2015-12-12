@@ -1,6 +1,38 @@
 # CS6200 Information Retrieval - HW5
 _Yaxin Huang_
 
+## How to Run the Codes
+1. In your Terminal, cd to this directory, and cd to the [code](code/) directory.
+2. Run the following script to get all outputs by entering these commands:
+```
+$ chmod 755 run
+$ ./run
+```
+3. All the generated outputs are under [code/outputs](code/outputs) directory.
+  - [q1_hw3_result.eval](code/outputs/q1_hw3_result.eval) HW3 query 1 results
+  - [q2_hw3_result.eval](code/outputs/q2_hw3_result.eval) HW3 query 2 results
+  - [q3_hw3_result.eval](code/outputs/q3_hw3_result.eval) HW3 query 3 results
+  - [table_1](code/outputs/table_1) The required statistics for query 1
+  - [table_2](code/outputs/table_2) The required statistics for query 2
+  - [table_3](code/outputs/table_3) The required statistics for query 3
+
+## What's Inside the Repo
+* [README.md](README.md)
+* [code](code/)
+  - [outputs](code/outputs) described in the last section
+  - [cacm.rel](code/cacm.rel) the judgement file
+  - [results.eval](code/results.eval) results generated in HW3
+  - [run](code/run) the script to run the python codes authomatically
+  - [statistics.py](code/statistics.py) the python module to compute statistics
+  - [transform_hw3.py](code/transform_hw3.py) the python module to extract needed HW3 results to [outputs](code/outputs) directory
+
+## Results
+* The result tables for three queries can be found in [outputs](code/outputs) directory.
+* Query 1 P@20: 0.15
+* Query 2 P@20: 0.25
+* Query 3 P@20: 0.45
+* MAP: (0.599431818182 + 0.3120861678 + 0.622468078061) / 3 = 0.5113286880143333
+
 ## Assignment Description
 **Goal: To evaluate retrieval effectiveness**    
 After having built your search engine, performed indexing and retrieval. It is now time to evaluate how well the search engine did at finding pertinent documents in response to queries. There exist several effectiveness measure to quantify this performance, such as Precision, Recall, Mean Reciprocal Rank (MRR), and Discounted Cumulative Gain (DCG) for instance.    
